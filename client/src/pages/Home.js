@@ -7,10 +7,6 @@ const Home = () => {
                 <h1>Ramiyan Gangatharan</h1>
                 <p>Full Stack Developer</p>
             </div>
-            <br/><br/><br/><br/><br/><br/>
-            <div>
-                <h1>Introduction</h1>
-            </div>
         </div>
     );
 };
