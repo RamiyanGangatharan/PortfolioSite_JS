@@ -2,10 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import DigitalResume from "./pages/digitalResume";
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Layout from './Layout';
 import './App.css';
+
 
 const App = () => {
     return (
@@ -14,6 +16,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="/digitalResume" element={<DigitalResume />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
