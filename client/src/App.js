@@ -2,11 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
-import DigitalResume from "./pages/digitalResume";
+import DigitalResume from "./pages/DigitalResume";
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Layout from './Layout';
 import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 const App = () => {

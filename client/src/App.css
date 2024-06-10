@@ -4,20 +4,26 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff; /* White background */
-  color: #000000; /* Black text */
+  color: #333333; /* Dark gray text */
   line-height: 1.6;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #007bff; /* Blue text */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
 }
 
 header {
-  background: #ffffff; /* White background */
-  border-bottom: 1px solid #c0c0c0; /* Silver border */
+  background: #f8f8f8; /* Light gray background */
+  border-bottom: 1px solid #e0e0e0; /* Light gray border */
   padding: 1rem 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333333; /* Dark gray text */
 }
 
 header nav ul {
@@ -34,7 +40,7 @@ header nav li {
 }
 
 header nav a {
-  color: #000000; /* Black text */
+  color: #333333; /* Dark gray text */
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -43,38 +49,28 @@ header nav a:hover {
   color: #007bff; /* Blue on hover */
 }
 
-.initials {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #007bff; /* Blue text for initials */
-  margin-right: 2rem; /* Space between initials and the first link */
-}
-
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 80vh; /* Adjust as needed for your design */
   text-align: center;
   padding: 0 1rem;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark gray text */
 }
 
 .hero h1 {
   font-size: 4rem; /* Adjust size as needed */
   margin: 0;
+  color: #000000; /* Black text */
 }
 
 .hero p {
   font-size: 1.5rem; /* Adjust size as needed */
   margin: 0;
-}
-
-main {
-  padding: 2rem 1rem;
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: #ffffff; /* White background */
 }
 
 h1, h2 {
@@ -83,11 +79,11 @@ h1, h2 {
 }
 
 footer {
-  background: #ffffff; /* White background */
-  color: #000000; /* Black text */
+  background: #f8f8f8; /* Light gray background */
+  color: #333333; /* Dark gray text */
   text-align: center;
   padding: 1rem 0;
-  border-top: 1px solid #c0c0c0; /* Silver border */
+  border-top: 1px solid #e0e0e0; /* Light gray border */
 }
 
 footer p {
@@ -113,7 +109,7 @@ footer p:hover {
 }
 
 .button:hover {
-  background-color: #6c757d; /* Gray on hover */
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Responsive Design */
@@ -142,6 +138,8 @@ footer p:hover {
   max-width: 900px;
   margin: auto;
   padding: 20px;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark gray text */
 }
 
 .section-title {
@@ -149,6 +147,7 @@ footer p:hover {
   padding-bottom: 10px;
   margin-bottom: 20px;
   text-align: left;
+  color: #333333; /* Dark gray text */
 }
 
 .experience-item, .education-item, .project-item {
@@ -161,11 +160,13 @@ footer p:hover {
   font-size: 18px;
   text-align: left;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f8f8; /* Light gray background */
+  color: #333333; /* Dark gray text */
 }
 
 .styled-table thead tr {
-  background-color: black;
-  color: #ffffff;
+  background-color: #e0e0e0; /* Light gray background */
+  color: #333333; /* Dark gray text */
   text-align: center;
 }
 
@@ -180,11 +181,11 @@ footer p:hover {
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-  background-color: #faf9f6;
+  background-color: #fafafa;
 }
 
 .styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid #dddddd; /* Light gray border */
 }
 
 .section-content {
