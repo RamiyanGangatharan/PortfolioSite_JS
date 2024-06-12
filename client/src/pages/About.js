@@ -243,6 +243,28 @@ const About = () => {
                     <div id="flush-collapseFour" className="accordion-collapse collapse"
                          aria-labelledby="flush-headingFour" data-bs-parent="#aboutAccordion">
                         <div className="accordion-body text-wrap">
+                            <h5>Tim Hortons Related Skills</h5>
+                            <p>
+                                <ul>
+                                    <li>Can lead a team of ten effectively throughout the shift</li>
+                                    <li>Proficient in most major procedures including: </li>
+                                    <ul>
+                                        <li>Food Safety</li>
+                                        <li>Cleaning the Iced Cappuccino Machine</li>
+                                        <li>Cleaning the Espresso and Hot Cappuccino Machine</li>
+                                        <li>Operating a POS system at an administrative level</li>
+                                        <li>Closing Procedures</li>
+                                        <li>Robbery Procedures</li>
+                                        <li>Handling Medical Emergencies</li>
+                                        <li>Workplace Conflict-Resolution Strategies</li>
+                                    </ul>
+                                </ul>
+                            </p>
+                            <h5>Programming Languages</h5>
+                            <p>
+
+                            </p>
+                            <h5>Frameworks</h5>
                             <p>
 
                             </p>

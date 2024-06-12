@@ -6,7 +6,7 @@ const Research = () => {
     return (
         <div className="container my-5">
             <header className="text-center mb-4">
-                <h1>My Research Papers</h1>
+                <h1>My Featured Research Papers</h1>
                 <p className="lead">Explore the research papers I have completed during my college studies.</p>
             </header>
             <div className="table-responsive">
@@ -22,17 +22,7 @@ const Research = () => {
                     <tr>
                         <th scope="row">1</th>
                         <td>Research Paper 1</td>
-                        <td><a href="research-papers/paper1.html" className="text-decoration-none">Read Paper</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Research Paper 2</td>
-                        <td><a href="research-papers/paper2.html" className="text-decoration-none">Read Paper</a></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Research Paper 3</td>
-                        <td><a href="research-papers/paper3.html" className="text-decoration-none">Read Paper</a></td>
+                        <td><a href="#" className="text-decoration-none">Read Paper</a></td>
                     </tr>
                     </tbody>
                 </table>
