@@ -17,28 +17,43 @@ const About = () => {
                     <div id="flush-collapseOne" className="accordion-collapse collapse show"
                          aria-labelledby="flush-headingOne" data-bs-parent="#aboutAccordion">
                         <div className="accordion-body text-wrap">
-                            <p>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                My name is Ramiyan Gangatharan. I am a dedicated programmer with a passion for creating
-                                innovative software solutions. I am currently in the Computer Programming & Analysis
-                                program at Durham College, with previous experience from a programming boot camp and two
-                                semesters at Centennial College in the Software Engineering Technology program. With
-                                this background in computers and software development, I have honed my skills in various
-                                programming languages including Python, Java, C#, C++, COBOL, JCL, HTML, CSS, JS, and
-                                SQL. I specialize in creating robust and aesthetic applications and have extensive
-                                experience working with the MERN stack (MongoDB, Express, React, and Node.js).
-                            </p>
-                            <p>
-                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                Currently, I am creating this website as well as developing a C# application that tracks
-                                my spending habits through the power of SQL and the .NET framework. I work at Tim
-                                Hortons and have been there since November 2021, where I am a shift leader for the
-                                afternoon shift. When I am not working or coding, you can catch me reading a book,
-                                playing a video game, or watching my favorite shows and movies. I am always excited to
-                                connect with like-minded professionals and explore new opportunities in the
-                                technological world. Feel free to <a href="./Contact.js">contact me</a> for
-                                collaborations or to hang out if you're in the area.
-                            </p>
+                            <div className="card">
+                                <div className="card-body">
+                                    <p className="card-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        My name is Ramiyan Gangatharan. I am a dedicated programmer with a passion for
+                                        creating innovative software solutions. I am currently in the Computer
+                                        Programming & Analysis
+                                        program at Durham College, with previous experience from a programming boot camp
+                                        and two
+                                        semesters at Centennial College in the Software Engineering Technology program.
+                                        With
+                                        this background in computers and software development, I have honed my skills in
+                                        various
+                                        programming languages including Python, Java, C#, C++, COBOL, JCL, HTML, CSS,
+                                        JS, and
+                                        SQL. I specialize in creating robust and aesthetic applications and have
+                                        extensive
+                                        experience working with the MERN stack (MongoDB, Express, React, and Node.js).
+                                    </p>
+                                    <p className="card-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Currently, I am creating this website as well as developing a C# application
+                                        that tracks
+                                        my spending habits through the power of SQL and the .NET framework. I work at
+                                        Tim
+                                        Hortons and have been there since November 2021, where I am a shift leader for
+                                        the
+                                        afternoon shift. When I am not working or coding, you can catch me reading a
+                                        book,
+                                        playing a video game, or watching my favorite shows and movies. I am always
+                                        excited to
+                                        connect with like-minded professionals and explore new opportunities in the
+                                        technological world. Feel free to <a href="./Contact.js">contact me</a> for
+                                        collaborations or to hang out if you're in the area.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,39 +70,61 @@ const About = () => {
                     <div id="flush-collapseTwo" className="accordion-collapse collapse"
                          aria-labelledby="flush-headingTwo" data-bs-parent="#aboutAccordion">
                         <div className="accordion-body text-wrap">
-                            <p>
-                                Professionally, I have been working at Tim Hortons, freelancing in web development, and
-                                performing IT-related tasks such as fixing laptops, desktops, and assisting with POS
-                                system repairs at my store.
-                            </p>
-                            <p>
-                                At Tim Hortons, I have progressed through three different positions: Counter Staff, Team
-                                Leader, and currently, Shift Leader.
-                            </p>
-                            <h5>Counter Staff</h5>
-                            <ul>
-                                <li>
-                                    Learned daily tasks of the restaurant and maintained
-                                    store cleanliness and safety.
-                                </li>
-                            </ul>
-                            <h5>Team Leader</h5>
-                            <ul>
-                                <li>
-                                    Assisted managers, managed small groups of staff, and
-                                    learned complex procedures such as closing, handling power outages, and crowd
-                                    control. Acted as an apprentice to my manager, covering their duties during days
-                                    off.
-                                </li>
-                            </ul>
-                            <h5>Shift Leader</h5>
-                            <ul>
-                                <li>
-                                    Trained further to bridge the skill gap between
-                                    managing a small team and overseeing an entire shift. This role involves ensuring
-                                    the smooth operation and wellbeing of the restaurant during my shift.
-                                </li>
-                            </ul>
+
+                            <div className="card">
+                                <div className="card-body">
+                                    <p>
+                                        Professionally, I have been working at Tim Hortons, freelancing in web
+                                        development, and
+                                        performing IT-related tasks such as fixing laptops, desktops, and assisting with
+                                        POS
+                                        system repairs at my store. At Tim Hortons, I have progressed through three
+                                        different positions: Counter Staff, Team
+                                        Leader, and currently, Shift Leader.
+                                    </p>
+                                </div>
+                            </div>
+                            <br/>
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Counter Staff</h5>
+                                    <ul>
+                                        <li>
+                                            Learned daily tasks of the restaurant and maintained
+                                            store cleanliness and safety.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br/>
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Team Leader</h5>
+                                    <ul>
+                                        <li>
+                                            Assisted managers, managed small groups of staff, and
+                                            learned complex procedures such as closing, handling power outages, and
+                                            crowd control. Acted as an apprentice to my manager, covering their duties
+                                            during
+                                            days off.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br/>
+                            <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">Shift Leader</h5>
+                                    <ul>
+                                        <li>
+                                            Trained further to bridge the skill gap between
+                                            managing a small team and overseeing an entire shift. This role involves
+                                            ensuring
+                                            the smooth operation and wellbeing of the restaurant during my shift.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -231,65 +268,6 @@ const About = () => {
                     </div>
                 </div>
 
-
-                <div className="accordion-item">
-                    <h2 className="accordion-header" id="flush-headingFour">
-                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                            Technical Skills
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" className="accordion-collapse collapse"
-                         aria-labelledby="flush-headingFour" data-bs-parent="#aboutAccordion">
-                        <div className="accordion-body text-wrap">
-                            <h5>Tim Hortons Related Skills</h5>
-                            <p>
-                                <ul>
-                                    <li>Can lead a team of ten effectively throughout the shift</li>
-                                    <li>Proficient in most major procedures including: </li>
-                                    <ul>
-                                        <li>Food Safety</li>
-                                        <li>Cleaning the Iced Cappuccino Machine</li>
-                                        <li>Cleaning the Espresso and Hot Cappuccino Machine</li>
-                                        <li>Operating a POS system at an administrative level</li>
-                                        <li>Closing Procedures</li>
-                                        <li>Robbery Procedures</li>
-                                        <li>Handling Medical Emergencies</li>
-                                        <li>Workplace Conflict-Resolution Strategies</li>
-                                    </ul>
-                                </ul>
-                            </p>
-                            <h5>Programming Languages</h5>
-                            <p>
-
-                            </p>
-                            <h5>Frameworks</h5>
-                            <p>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="accordion-item">
-                    <h2 className="accordion-header" id="flush-headingFive">
-                        <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFive" aria-expanded="false"
-                                aria-controls="flush-collapseFive">
-                            Projects and Achievements
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFive" className="accordion-collapse collapse"
-                         aria-labelledby="flush-headingFive" data-bs-parent="#aboutAccordion">
-                        <div className="accordion-body text-wrap">
-                            <p>
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingSix">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -301,9 +279,68 @@ const About = () => {
                     <div id="flush-collapseSix" className="accordion-collapse collapse"
                          aria-labelledby="flush-headingSix" data-bs-parent="#aboutAccordion">
                         <div className="accordion-body text-wrap">
-                            <p>
-
-                            </p>
+                            <div className="card mb-3">
+                                <div className="card-body">
+                                    <h5 className="card-title mb-2">Computers & Programming</h5>
+                                    <p className="card-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        My interest in computers began at a young age when I first used a computer in my
+                                        elementary school's computer lab in the late 2000s, running Windows XP. From
+                                        that moment, I was hooked and started tinkering with computers. By the age of
+                                        16, I began dismantling and rebuilding PCs. I did this for two reasons: my old
+                                        PC was outdated, and I wanted to experience the process of custom-building a PC.
+                                        I found it fascinating to see how all the components fit together.
+                                    </p>
+                                    <p className="card-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        I started programming in grade 10 with a Java class that introduced me to the
+                                        basics of programming, as well as some technical and engineering aspects of
+                                        software development, such as gathering requirements from users and converting
+                                        ASCII characters to binary. Since high school, I have been experimenting with
+                                        Java and other languages like Python and C#. In September 2021, I began my
+                                        academic journey at Centennial College, studying in the Software Engineering
+                                        Technology program for two semesters before realizing it wasn't the right fit
+                                        for me. I then switched to the Computer Programming & Analysis program at Durham
+                                        College, where I am now starting my third year. I plan to graduate from this
+                                        program and pursue a Bachelor's degree in Computer Science at a reputable
+                                        university in Ontario.
+                                    </p>
+                                    <p className="card-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        My experience over the years has been shaped by a lot of trial and error,
+                                        working on incomplete prototypes and learning from mistakes. From 2021 to 2024,
+                                        I have created various pieces of software, including websites, games, databases
+                                        and their interfaces, surveys, and some minor robotic projects. My colleagues
+                                        often say that I have "an eye for design," which has been crucial in creating
+                                        user-friendly and aesthetically pleasing software. I am always curious and eager
+                                        to learn new concepts, constantly seeking out new challenges and opportunities
+                                        to expand my knowledge and skills.
+                                    </p>
+                                    <p className="card-text">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        In conclusion, my journey with computers and programming has been driven by a
+                                        passion for technology and a relentless curiosity to learn and grow. As I
+                                        continue to develop my skills and pursue higher education, I am excited about
+                                        the future opportunities and challenges that lie ahead in the field of computer
+                                        science.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="card mb-3">
+                                <div className="card-body">
+                                    <h5 className="card-title mb-2">Reading</h5>
+                                </div>
+                            </div>
+                            <div className="card mb-3">
+                                <div className="card-body">
+                                    <h5 className="card-title mb-2">Motorsports</h5>
+                                </div>
+                            </div>
+                            <div className="card mb-3">
+                                <div className="card-body">
+                                    <h5 className="card-title mb-2">Fitness</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -325,7 +362,6 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     );
