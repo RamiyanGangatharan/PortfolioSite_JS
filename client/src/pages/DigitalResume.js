@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React, {useEffect, useState} from 'react';
+import {Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../client/src/App.css';
 
@@ -10,6 +10,7 @@ const DigitalResume = () => {
     const [technicalSkills, setTechnicalSkills] = useState(null);
     const [coursework, setCoursework] = useState(null);
     const [projects, setProjects] = useState(null);
+    const [home, setHome] = useState(null);
 
     useEffect(() => {
         Promise.all([
@@ -18,27 +19,29 @@ const DigitalResume = () => {
             fetch('data/resumeData/education.json').then(response => response.json()),
             fetch('data/resumeData/skills.json').then(response => response.json()),
             fetch('data/resumeData/coursework.json').then(response => response.json()),
-            fetch('data/resumeData/projects.json').then(response => response.json())
+            fetch('data/resumeData/projects.json').then(response => response.json()),
+            fetch('data/Home/homepage.json').then(response => response.json())
         ])
-            .then(([contactData, experienceData, educationData, skillsData, courseworkData, projectsData]) => {
+            .then(([contactData, experienceData, educationData, skillsData, courseworkData, projectsData, homeData]) => {
                 setContact(contactData);
                 setExperience(experienceData.experience);
                 setEducation(educationData.education);
                 setTechnicalSkills(skillsData.technicalSkills);
                 setCoursework(courseworkData.coursework);
                 setProjects(projectsData.projects);
+                setHome(homeData[0]);  // Accessing the first object in the array
             })
             .catch(error => console.error('Error fetching data:', error));
     }, []);
 
-    if (!contact || !experience || !education || !technicalSkills || !coursework || !projects) {
+    if (!contact || !experience || !education || !technicalSkills || !coursework || !projects || !home) {
         return <div>Loading...</div>;
     }
 
     return (
         <div className="container mt-lg-5">
             <header className="text-center mb-4">
-                <h1 className="display-6">Ramiyan Gangatharan</h1>
+                <h1 className="display-6">{home.name}</h1>
                 <nav>
                     <ul className="list-inline text-center">
                         {contact.contact.map((item, index) => (
@@ -46,7 +49,8 @@ const DigitalResume = () => {
                                 {item.type === "Phone" ? (
                                     <span className="btn btn-outline-dark">{item.number}</span>
                                 ) : (
-                                    <Link className="btn btn-outline-dark" to={item.url} target="_blank" rel="noopener noreferrer">{item.type}</Link>
+                                    <Link className="btn btn-outline-dark" to={item.url} target="_blank"
+                                          rel="noopener noreferrer">{item.type}</Link>
                                 )}
                             </li>
                         ))}

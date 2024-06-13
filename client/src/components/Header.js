@@ -1,8 +1,17 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
+    const [navbarLinks, setNavbarLinks] = useState([]);
+
+    useEffect(() => {
+        fetch('data/components/header.json')
+            .then(response => response.json())
+            .then(data => setNavbarLinks(data.navbar))
+            .catch(error => console.error('Error fetching navbar links:', error));
+    }, []);
+
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -14,24 +23,11 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/">Home</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/about">About</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/digitalResume">Digital Resume</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/projects">Projects</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/research">Research Papers</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/contact">Contact</Link>
-                            </li>
+                            {navbarLinks.map((link, index) => (
+                                <li className="nav-item" key={index}>
+                                    <Link className="nav-link" to={link.url}>{link.label}</Link>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,31 @@
+{
+  "footer": {
+    "links": [
+      {
+        "label": "Home",
+        "url": "/"
+      },
+      {
+        "label": "About",
+        "url": "/about"
+      },
+      {
+        "label": "Digital Resume",
+        "url": "/digitalResume"
+      },
+      {
+        "label": "Projects",
+        "url": "/projects"
+      },
+      {
+        "label": "Research Papers",
+        "url": "/research"
+      },
+      {
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ],
+    "copyright": "© 2024 Ramiyan Gangatharan. All rights reserved."
+  }
+}
