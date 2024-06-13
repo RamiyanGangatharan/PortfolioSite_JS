@@ -1,8 +1,16 @@
-// the plan here is to put all my papers I have done at college over here and convert them from word doc to HTML.
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Research = () => {
+    const [researchList, setResearchList] = useState([]);
+
+    useEffect(() => {
+        fetch('data/Research/research.json')
+            .then(response => response.json())
+            .then(data => setResearchList(data))
+            .catch(error => console.error('Error fetching research papers:', error));
+    }, []);
+
     return (
         <div className="container my-5">
             <header className="text-center mb-4">
@@ -19,11 +27,13 @@ const Research = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Research Paper 1</td>
-                        <td><a href="#" className="text-decoration-none">Read Paper</a></td>
-                    </tr>
+                    {researchList.map((paper, index) => (
+                        <tr key={index}>
+                            <th scope="row">{paper.id}</th>
+                            <td>{paper.title}</td>
+                            <td><a href={paper.link} className="text-decoration-none">Read Paper</a></td>
+                        </tr>
+                    ))}
                     </tbody>
                 </table>
             </div>
@@ -32,4 +42,3 @@ const Research = () => {
 };
 
 export default Research;
-

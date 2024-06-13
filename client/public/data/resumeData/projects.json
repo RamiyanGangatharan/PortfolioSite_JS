@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "title": "BlackJack Game",
+      "details": [
+        "Collaborated with a team of five to develop a Blackjack game using the .NET Framework and C#.",
+        "Contributed to the design and implementation of the game's logic, user interface, and features.",
+        "Ensured robust functionality and seamless user experience through rigorous testing and iteration."
+      ]
+    },
+    {
+      "title": "Portfolio Site",
+      "details": [
+        "Developed a full-stack web application utilizing modern web technologies.",
+        "Implemented the front end using JavaScript frameworks and libraries, including jQuery, React, and Next.js, with HTML5 and CSS (Bootstrap) for styling.",
+        "Managed server-side operations with ExpressJS, MongoDB, and Passport ensuring efficient and scalable performance."
+      ]
+    },
+    {
+      "title": "Student Registration System",
+      "details": [
+        "Created an SQL database and a full-scale C# application for a simulated student registration system.",
+        "Leveraged the .NET Framework to develop efficient database commands and a user-friendly interface."
+      ]
+    },
+    {
+      "title": "Real Estate Brokerage Application",
+      "details": [
+        "Designed a data model in star schema adhering to the third normal form (3NF) for a real estate brokerage application serving owners, renters, and buyers.",
+        "Utilized Visio to create an Entity Relationship Diagram (ERD) and documented the model with a detailed report for business users."
+      ]
+    },
+    {
+      "title": "Car Mechanic Appointment Service",
+      "details": [
+        "Designed and developed a C# application using the .NET Framework for a car mechanic appointment service.",
+        "Emphasized UI/UX best practices and code reusability to ensure a seamless user experience."
+      ]
+    }
+  ]
+}

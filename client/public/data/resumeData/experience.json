@@ -1,0 +1,31 @@
+{
+  "experience": [
+    {
+      "title": "Shift Leader",
+      "company": "Tim Hortons",
+      "duration": "May 2023 - Present",
+      "details": [
+        "Oversee daily shift operations, address customer inquiries, and lead a team of ten members in a fast-paced, dynamic environment.",
+        "Implemented a waste management system, aligning product production with sales trends to reduce waste and increasing overall profitability."
+      ]
+    },
+    {
+      "title": "Team Leader",
+      "company": "Tim Hortons",
+      "duration": "September 2022 - May 2023",
+      "details": [
+        "Served as an apprentice under managerial guidance, honing social and leadership skills while overseeing a small team.",
+        "Refined and adapted leadership techniques through targeted mentorship."
+      ]
+    },
+    {
+      "title": "Counter Staff",
+      "company": "Tim Hortons",
+      "duration": "November 2021 - September 2022",
+      "details": [
+        "Operated a point-of-sale system to manage transactions efficiently.",
+        "Collaborated with team members to maintain an organized and sanitary work environment."
+      ]
+    }
+  ]
+}

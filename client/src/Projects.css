@@ -1,0 +1,115 @@
+/* Projects.css */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.project-card {
+    width: 25rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* Font-face definitions */
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-black-italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-extrabold-italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-extrabold-italic 2.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-light-italic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('aptos-font/aptos-semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
