@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Ramiyan Gangatharan",
+    "position": "Full Stack Developer",
+    "location": "Toronto, ON",
+    "links": {
+      "resume": "/digitalResume",
+      "linkedin": "https://www.linkedin.com/in/ramiyan-gangatharan/",
+      "contact": "/Contact"
+    }
+  }
+]
