@@ -1,0 +1,49 @@
+{
+  "technicalSkills": [
+    {
+      "languages": "C#",
+      "environments": "Visual Studio 2022",
+      "frameworks": ".NET 8.0 & 5.0"
+    },
+    {
+      "languages": "Java",
+      "environments": "Visual Studio Code",
+      "frameworks": "Selenium"
+    },
+    {
+      "languages": "Python",
+      "environments": "IntelliJ IDEA",
+      "frameworks": "Unity Engine"
+    },
+    {
+      "languages": "HTML",
+      "environments": "PyCharm",
+      "frameworks": "ExpressJS"
+    },
+    {
+      "languages": "CSS",
+      "environments": "SSMS",
+      "frameworks": "Bootstrap"
+    },
+    {
+      "languages": "PHP",
+      "environments": "IBM Z/OS for Mainframes",
+      "frameworks": "ReactJS"
+    },
+    {
+      "languages": "JavaScript",
+      "environments": "WebStorm",
+      "frameworks": "jQuery"
+    },
+    {
+      "languages": "SQL",
+      "environments": "",
+      "frameworks": ""
+    },
+    {
+      "languages": "COBOL/JCL",
+      "environments": "",
+      "frameworks": ""
+    }
+  ]
+}

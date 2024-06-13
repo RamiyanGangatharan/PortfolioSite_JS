@@ -1,0 +1,16 @@
+{
+  "education": [
+    {
+      "institution": "Durham College",
+      "credential": "Advanced Diploma",
+      "program": "Computer Programming & Analysis",
+      "duration": "September 2022 - April 2025"
+    },
+    {
+      "institution": "Centennial College",
+      "credential": "Advanced Diploma",
+      "program": "Software Engineering Technology",
+      "duration": "September 2021 - April 2022"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "education": [
+    {
+      "institution": "Durham College",
+      "program": "Computer Programming & Analysis",
+      "duration": "September 2022 - April 2025 [Expected]",
+      "highlights": [
+        "Gained expertise in several mainstream programming languages including Python, Java, & C#.",
+        "Worked on projects involving the development of robust and aesthetic applications using the MERN stack (MongoDB, Express, React, Node.js)."
+      ],
+      "courses": {
+        "semester 1": [
+          "COMM-1100: Communications I",
+          "COMP-1116: Computer Systems - Hardware",
+          "COSC-1100: Introduction to Programming",
+          "INFT-1104: Data Communications & Networking",
+          "INFT-1105: Introduction to Databases",
+          "MATH-1114: Mathematics for IT"
+        ],
+        "semester 2": [
+          "COSC-1200: Object Oriented Programming I",
+          "GNED-1304: The Canadian Government",
+          "INFT-1206: Web Development Fundamentals",
+          "INFT-1207: Software Testing & Automation",
+          "MGMT-1223: Systems Development I",
+          "MGMT-1224: Business for IT Professionals"
+        ],
+        "semester 3": [
+          "INFT-2101: Database Development I",
+          "GNED-XXXX: Economics",
+          "COMM-2109: IT Career Essentials",
+          "COSC-2100: Object Oriented Programming II",
+          "MGMT-2107: Systems Development II",
+          "INFT-2100: Web Development Intermediate"
+        ],
+        "semester 4": [
+          "GNED-1403: A Short History of the World",
+          "INFT-2203: Cloud Technology Fundamentals",
+          "INFT-2200: Mainframe Development I",
+          "COSC-2200: Object Oriented Programming III",
+          "INFT-2202: Web Development Client Side Script",
+          "INFT-2201: Web Development Enterprise"
+        ]
+      }
+    },
+    {
+      "institution": "Centennial College",
+      "program": "Software Engineering Technology",
+      "duration": "September 2021 - April 2022",
+      "highlights": [
+        "Completed two semesters focusing on advanced software engineering principles and practices.",
+        "Developed a solid foundation in software design, development, and testing methodologies."
+      ],
+      "courses": {
+        "semester 1": [
+          "COMM-160: Communications I",
+          "COMP-100: Programming I",
+          "COMP-120: Software Engineering Fundamentals",
+          "COMP-213: Web Interface Design",
+          "MATH-175: Functions and Number Systems"
+        ],
+        "semester 2": [
+          "COMM-170: Communications II",
+          "COMP-122: Introduction to Database Concepts",
+          "COMP-123: Programming II",
+          "COMP-125: Client Side Web Development",
+          "COMP-225: Software Requirements Engineering",
+          "COMP-301: Unix/Linux Operating Systems",
+          "MATH-185: Discrete Mathematics"
+        ]
+      }
+    },
+    {
+      "institution": "Clarington Central Secondary School",
+      "program": "Highschool",
+      "duration": "September 2017 - June 2021",
+      "graduation": "2021",
+      "highlights": [
+        "Completed high school with a strong interest in computer science and technology.",
+        "Participated in technology clubs and extracurricular activities related to programming and IT.",
+        "Relevant coursework: Computer Science, Mathematics, and Physics."
+      ],
+      "courses": {
+        "OSSD": [
+          "All of them"
+        ]
+      }
+    }
+  ]
+}
