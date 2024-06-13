@@ -12,10 +12,16 @@ const Home = () => {
                 <br/>
                 <div className="row justify-content-center">
                     <div className="col-auto">
-                        <Link className="btn btn-outline-dark" to="/digitalResume" target="_blank" rel="noopener noreferrer">Resume</Link>
+                        <Link className="btn btn-outline-dark" to="/digitalResume" target="_blank"
+                              rel="noopener noreferrer">Resume</Link>
                     </div>
                     <div className="col-auto">
-                        <Link className="btn btn-outline-dark" to="https://www.linkedin.com/in/ramiyan-gangatharan/" target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+                        <Link className="btn btn-outline-dark" to="https://www.linkedin.com/in/ramiyan-gangatharan/"
+                              target="_blank" rel="noopener noreferrer">LinkedIn</Link>
+                    </div>
+                    <div className="col-auto">
+                        <Link className="btn btn-outline-dark" to="/Contact"
+                              target="_blank" rel="noopener noreferrer">Contact</Link>
                     </div>
                 </div>
             </div>
