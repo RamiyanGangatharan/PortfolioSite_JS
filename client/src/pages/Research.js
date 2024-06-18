@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Research = () => {
     const [researchList, setResearchList] = useState([]);
+    const [researchcontent, setResearchContent] = useState([]);
 
     useEffect(() => {
         fetch('data/Research/research.json')
@@ -11,12 +12,21 @@ const Research = () => {
             .catch(error => console.error('Error fetching research papers:', error));
     }, []);
 
+    useEffect( () => {
+        fetch('data/Research/research_content.json')
+            .then(response => response.json())
+            .then(data => setResearchContent(data))
+            .catch(error => console.error('Error fetching page content:', error));
+    }, []);
+
     return (
         <div className="container my-5">
-            <header className="text-center mb-4">
-                <h1>My Featured Research Papers</h1>
-                <p className="lead">Explore the research papers I have completed during my college studies.</p>
-            </header>
+            {researchcontent.map((item) => (
+                <header className="text-center mb-4">
+                    <h1>{item.header}</h1>
+                    <p className="lead">{item.subheader}</p>
+                </header>
+            ))}
             <div className="table-responsive">
                 <table className="table table-bordered table-striped">
                     <thead className="thead-dark">
