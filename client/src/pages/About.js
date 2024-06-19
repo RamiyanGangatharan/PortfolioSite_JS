@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const About = () => {
     const [introduction, setIntroduction] = useState(null);
@@ -28,11 +29,14 @@ const About = () => {
     }, []);
 
     if (!introduction || !experience || !education || !hobbies || !contact) {
-        return <div>Loading...</div>;
+        return <div className="hero">Loading...</div>;
     }
 
     return (
         <div className="container mt-5">
+            <Helmet>
+                <title>About</title>
+            </Helmet>
             <h1>About</h1>
             <div className="accordion accordion-flush" id="aboutAccordion">
                 <div className="accordion-item">
@@ -70,7 +74,7 @@ const About = () => {
                             {experience.map((experience, index) => (
                                 <div className="card mb-3" key={index}>
                                     <div className="card-body">
-                                        <h5 className="card-title"> Tim Hortons - {experience.title}</h5>
+                                        <h5 className="card-title">{experience.title}</h5>
                                         <p className="card-text">{experience.details}</p>
                                     </div>
                                 </div>
@@ -129,80 +133,92 @@ const About = () => {
                     <div id="flush-collapseSix" className="accordion-collapse collapse"
                          aria-labelledby="flush-headingSix" data-bs-parent="#aboutAccordion">
                         <div className="accordion-body text-wrap">
-                            {hobbies.map((hobby, index) => (
-                                <div key={index}>
-                                    {Array.isArray(hobby.description) ? (
-                                        hobby.description.map((paragraph, i) => (
-                                            <p className="card-text"
-                                               key={i}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{paragraph}</p>
-                                        ))
-                                    ) : (
-                                        <p className="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{hobby.description}</p>
-                                    )}
-                                    {hobby.academicLiterature && (
-                                        <>
-                                            <h4>Academic Literature</h4>
-                                            <table className="table table-bordered">
-                                                <thead>
-                                                <tr>
-                                                    <th scope="col">Book Name</th>
-                                                    <th scope="col">Author</th>
-                                                    <th scope="col">Status</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                {hobby.academicLiterature.map((book, i) => (
-                                                    <tr key={i}>
-                                                        <td>{book.bookName}</td>
-                                                        <td>{book.author}</td>
-                                                        <td>{book.status}</td>
-                                                    </tr>
-                                                ))}
-                                                </tbody>
-                                            </table>
-                                        </>
-                                    )}
-                                    {hobby.recreationalLiterature && (
-                                        <>
-                                            <h4>Recreational Literature</h4>
-                                            <table className="table table-bordered">
-                                                <thead>
-                                                <tr>
-                                                    <th scope="col">Book Name</th>
-                                                    <th scope="col">Author</th>
-                                                    <th scope="col">Status</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                {hobby.recreationalLiterature.map((book, i) => (
-                                                    <tr key={i}>
-                                                        <td>{book.bookName}</td>
-                                                        <td>{book.author}</td>
-                                                        <td>{book.status}</td>
-                                                    </tr>
-                                                ))}
-                                                </tbody>
-                                            </table>
-                                        </>
-                                    )}
-                                    {hobby.details && (
-                                        <>
-                                            {hobby.details.map((detail, i) => (
-                                                <div className="card mb-3" key={i}>
-                                                    <div className="card-body">
-                                                        <h6 className="card-title">{detail.title}</h6>
-                                                        <p className="card-text">{detail.description}</p>
-                                                    </div>
-                                                </div>
-                                            ))}
-                                        </>
-                                    )}
-                                </div>
-                            ))}
+                            <div className="accordion accordion-flush" id="hobbiesAccordion">
+                                {hobbies.map((hobby, index) => (
+                                    <div key={index} className="accordion-item">
+                                        <h2 className="accordion-header" id={`flush-headingHobby${index}`}>
+                                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target={`#flush-collapseHobby${index}`} aria-expanded="false"
+                                                    aria-controls={`flush-collapseHobby${index}`}>{hobby.title}
+                                            </button>
+                                        </h2>
+                                        <div id={`flush-collapseHobby${index}`} className="accordion-collapse collapse"
+                                             aria-labelledby={`flush-headingHobby${index}`} data-bs-parent="#hobbiesAccordion">
+                                            <div className="accordion-body">
+                                                {Array.isArray(hobby.description) ? (
+                                                    hobby.description.map((paragraph, i) => (
+                                                        <p className="card-text"
+                                                           key={i}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{paragraph}</p>
+                                                    ))
+                                                ) : (
+                                                    <p className="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{hobby.description}</p>
+                                                )}
+                                                {hobby.academicLiterature && (
+                                                    <>
+                                                        <h4>Academic Literature</h4>
+                                                        <table className="table table-bordered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Book Name</th>
+                                                                <th scope="col">Author</th>
+                                                                <th scope="col">Status</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {hobby.academicLiterature.map((book, i) => (
+                                                                <tr key={i}>
+                                                                    <td>{book.bookName}</td>
+                                                                    <td>{book.author}</td>
+                                                                    <td>{book.status}</td>
+                                                                </tr>
+                                                            ))}
+                                                            </tbody>
+                                                        </table>
+                                                    </>
+                                                )}
+                                                {hobby.recreationalLiterature && (
+                                                    <>
+                                                        <h4>Recreational Literature</h4>
+                                                        <table className="table table-bordered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Book Name</th>
+                                                                <th scope="col">Author</th>
+                                                                <th scope="col">Status</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {hobby.recreationalLiterature.map((book, i) => (
+                                                                <tr key={i}>
+                                                                    <td>{book.bookName}</td>
+                                                                    <td>{book.author}</td>
+                                                                    <td>{book.status}</td>
+                                                                </tr>
+                                                            ))}
+                                                            </tbody>
+                                                        </table>
+                                                    </>
+                                                )}
+                                                {hobby.details && (
+                                                    <>
+                                                        {hobby.details.map((detail, i) => (
+                                                            <div className="card mb-3" key={i}>
+                                                                <div className="card-body">
+                                                                    <h6 className="card-title">{detail.title}</h6>
+                                                                    <p className="card-text">{detail.description}</p>
+                                                                </div>
+                                                            </div>
+                                                        ))}
+                                                    </>
+                                                )}
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingSeven">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"

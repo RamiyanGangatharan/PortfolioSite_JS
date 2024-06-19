@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Helmet} from "react-helmet";
 
 const Contact = () => {
     const [subject, setSubject] = useState('');
@@ -21,6 +22,9 @@ const Contact = () => {
 
     return (
         <div className="container mt-5">
+            <Helmet>
+                <title>Contact</title>
+            </Helmet>
             <h1 className="mb-4 text-center">Contact Page</h1>
             <p className="text-center">Get in touch with me.</p>
             <form className="mx-auto" style={{ maxWidth: '600px' }} onSubmit={handleSubmit}>

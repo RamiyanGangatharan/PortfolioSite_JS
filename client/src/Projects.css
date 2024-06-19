@@ -1,13 +1,34 @@
-/* Projects.css */
+/* Container adjustments */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem; /* Added padding to prevent elements from touching the edges */
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
     color: #343a40;
+    text-align: center;
+    margin-bottom: 2rem;
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
 .project-card {
     width: 25rem;
+    height: 35rem;
+    overflow: hidden;
+    position: relative;
     transition: transform 0.2s, box-shadow 0.2s;
+    margin: 1rem;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+    @media (max-width: 768px) {
+        width: 90%;
+        height: auto;
+    }
 }
 
 .project-card:hover {
@@ -15,19 +36,43 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.project-card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    @media (max-width: 768px) {
+        height: auto;
+    }
+}
+
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
+    margin: 0.5rem 0; /* Added margin for spacing */
+    @media (max-width: 768px) {
+        font-size: 1rem;
+    }
 }
 
 .card-text {
     font-size: 1rem;
+    text-align: justify;
     color: #6c757d;
+    margin-bottom: 1rem; /* Added margin for spacing */
+    @media (max-width: 768px) {
+        font-size: 0.875rem;
+    }
 }
 
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
+    padding: 0.5rem 1rem; /* Ensure buttons have sufficient padding */
+    font-size: 1rem;
+    @media (max-width: 768px) {
+        font-size: 0.875rem;
+        padding: 0.4rem 0.8rem;
+    }
 }
 
 .btn-primary:hover {
@@ -35,6 +80,56 @@
     border-color: #0056b3;
 }
 
+.project-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    padding: 1rem;
+    text-align: center;
+    @media (max-width: 768px) {
+        height: auto;
+    }
+}
+
+/* Flex container adjustments */
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1rem; /* Ensure there's padding within the flex container */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .project-card {
+        width: 22rem;
+        height: 30rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-card {
+        width: 20rem;
+        height: 28rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 90%;
+        height: auto;
+    }
+
+    .project-card img {
+        height: auto;
+    }
+}
 
 /* Font-face definitions */
 @font-face {

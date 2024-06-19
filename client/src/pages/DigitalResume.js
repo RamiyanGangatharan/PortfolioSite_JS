@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../client/src/App.css';
+import {Helmet} from "react-helmet";
 
 const DigitalResume = () => {
     const [contact, setContact] = useState(null);
@@ -35,11 +36,14 @@ const DigitalResume = () => {
     }, []);
 
     if (!contact || !experience || !education || !technicalSkills || !coursework || !projects || !home) {
-        return <div>Loading...</div>;
+        return <div className="hero">Loading...</div>;
     }
 
     return (
         <div className="container mt-lg-5">
+            <Helmet>
+                <title>Resume</title>
+            </Helmet>
             <header className="text-center mb-4">
                 <h1 className="display-6">{home.name}</h1>
                 <nav>

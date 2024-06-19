@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Helmet} from "react-helmet";
 
 const Research = () => {
     const [researchList, setResearchList] = useState([]);
@@ -21,6 +22,9 @@ const Research = () => {
 
     return (
         <div className="container my-5">
+            <Helmet>
+                <title>Research</title>
+            </Helmet>
             {researchcontent.map((item) => (
                 <header className="text-center mb-4">
                     <h1>{item.header}</h1>

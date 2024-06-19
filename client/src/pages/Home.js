@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     const [home, setHome] = useState(null);
@@ -13,11 +14,14 @@ const Home = () => {
     }, []);
 
     if (!home) {
-        return <div>Loading...</div>;
+        return <div className="hero">Loading...</div>;
     }
 
     return (
         <div className="container-fluid bg-light text-center py-5">
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <div className="hero">
                 <h1 className="display-4">{home.name}</h1>
                 <p className="lead">{home.position}</p>

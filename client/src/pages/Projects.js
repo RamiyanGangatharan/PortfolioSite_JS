@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import '../../src/Projects.css'; // Make sure to create and import a CSS file for additional styling
+import '../../src/Projects.css';
+import { Helmet } from 'react-helmet';
 
 const Projects = () => {
     const [projectList, setProjectList] = useState([]);
@@ -13,14 +14,17 @@ const Projects = () => {
 
     return (
         <div className="container my-5">
+            <Helmet>
+                <title>Projects</title>
+            </Helmet>
             <h1 className="section-title text-center mb-4">Projects</h1>
             <div className="d-flex flex-wrap justify-content-center">
                 {projectList.map((project, index) => (
                     <div className="card project-card m-3" key={index}>
+                        <img src={project.image} alt={project.title} />
                         <div className="card-body">
                             <h5 className="card-title">{project.title}</h5>
                             <p className="card-text">{project.description}</p>
-                            <a href={project.link} className="btn btn-primary">Learn More</a>
                         </div>
                     </div>
                 ))}
