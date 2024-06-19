@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: client
+    envVars:
+      - key: NODE_VERSION
+        value: 20.12.1
+    buildCommand: "cd client && yarn install && yarn build"
+    startCommand: "cd client && yarn start"
+
+  - type: web
+    name: server
+    envVars:
+      - key: NODE_VERSION
+        value: 20.12.1
+    buildCommand: "cd server && yarn install"
+    startCommand: "cd server && yarn start"
