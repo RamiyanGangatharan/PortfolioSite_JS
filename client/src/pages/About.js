@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
+import {Link} from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 const About = () => {
     const [introduction, setIntroduction] = useState(null);
@@ -132,31 +132,36 @@ const About = () => {
                     </h2>
                     <div id="flush-collapseSix" className="accordion-collapse collapse"
                          aria-labelledby="flush-headingSix" data-bs-parent="#aboutAccordion">
-                        <div className="accordion-body text-wrap">
-                            <div className="accordion accordion-flush" id="hobbiesAccordion">
-                                {hobbies.map((hobby, index) => (
-                                    <div key={index} className="accordion-item">
-                                        <h2 className="accordion-header" id={`flush-headingHobby${index}`}>
-                                            <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target={`#flush-collapseHobby${index}`} aria-expanded="false"
-                                                    aria-controls={`flush-collapseHobby${index}`}>{hobby.title}
-                                            </button>
-                                        </h2>
-                                        <div id={`flush-collapseHobby${index}`} className="accordion-collapse collapse"
-                                             aria-labelledby={`flush-headingHobby${index}`} data-bs-parent="#hobbiesAccordion">
-                                            <div className="accordion-body">
-                                                {Array.isArray(hobby.description) ? (
-                                                    hobby.description.map((paragraph, i) => (
-                                                        <p className="card-text"
-                                                           key={i}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{paragraph}</p>
-                                                    ))
-                                                ) : (
-                                                    <p className="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{hobby.description}</p>
-                                                )}
-                                                {hobby.academicLiterature && (
-                                                    <>
-                                                        <h4>Academic Literature</h4>
-                                                        <table className="table table-bordered">
+                        <div className="accordion accordion-flush" id="hobbiesAccordion">
+                            {hobbies.map((hobby, index) => (
+                                <div className="accordion-item" key={index}>
+                                    <h2 className="accordion-header" id={`flush-heading${index}`}>
+                                        <button className="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target={`#flush-collapse${index}`} aria-expanded="false"
+                                                aria-controls={`flush-collapse${index}`}>{hobby.title}
+                                        </button>
+                                    </h2>
+                                    <div id={`flush-collapse${index}`} className="accordion-collapse collapse"
+                                         aria-labelledby={`flush-heading${index}`} data-bs-parent="#hobbiesAccordion">
+                                        <div className="accordion-body">
+                                            {Array.isArray(hobby.description) ? (
+                                                hobby.description.map((paragraph, i) => (
+                                                    <p className="card-text" key={i} style={{textIndent: '2rem'}}>
+                                                        {paragraph}
+                                                    </p>
+                                                ))
+                                            ) : (
+                                                <p className="card-text" style={{textIndent: '2rem'}}>
+                                                    {hobby.description}
+                                                </p>
+                                            )}
+                                            {hobby.academicLiterature && (
+                                                <>
+                                                    <h4 className="mt-4">Academic Literature</h4>
+                                                    <div className="table-responsive mt-3">
+                                                        <table
+                                                            className="table table-hover table-striped table-bordered custom-table">
                                                             <thead>
                                                             <tr>
                                                                 <th scope="col">Book Name</th>
@@ -174,12 +179,15 @@ const About = () => {
                                                             ))}
                                                             </tbody>
                                                         </table>
-                                                    </>
-                                                )}
-                                                {hobby.recreationalLiterature && (
-                                                    <>
-                                                        <h4>Recreational Literature</h4>
-                                                        <table className="table table-bordered">
+                                                    </div>
+                                                </>
+                                            )}
+                                            {hobby.recreationalLiterature && (
+                                                <>
+                                                    <h4 className="mt-4">Recreational Literature</h4>
+                                                    <div className="table-responsive mt-3">
+                                                        <table
+                                                            className="table table-hover table-striped table-bordered custom-table">
                                                             <thead>
                                                             <tr>
                                                                 <th scope="col">Book Name</th>
@@ -197,28 +205,29 @@ const About = () => {
                                                             ))}
                                                             </tbody>
                                                         </table>
-                                                    </>
-                                                )}
-                                                {hobby.details && (
-                                                    <>
-                                                        {hobby.details.map((detail, i) => (
-                                                            <div className="card mb-3" key={i}>
-                                                                <div className="card-body">
-                                                                    <h6 className="card-title">{detail.title}</h6>
-                                                                    <p className="card-text">{detail.description}</p>
-                                                                </div>
+                                                    </div>
+                                                </>
+                                            )}
+                                            {hobby.details && (
+                                                <>
+                                                    {hobby.details.map((detail, i) => (
+                                                        <div className="card my-4 shadow-sm" key={i}>
+                                                            <div className="card-body">
+                                                                <h6 className="card-title">{detail.title}</h6>
+                                                                <p className="card-text">{detail.description}</p>
                                                             </div>
-                                                        ))}
-                                                    </>
-                                                )}
-                                            </div>
+                                                        </div>
+                                                    ))}
+                                                </>
+                                            )}
                                         </div>
                                     </div>
-                                ))}
-                            </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
+
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingSeven">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"

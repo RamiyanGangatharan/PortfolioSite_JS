@@ -1,0 +1,43 @@
+/* Photography.css */
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 0 30%; /* Adjust the width percentage to control the number of columns */
+    margin: 0.5rem 0.5rem 5rem;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item .card-body {
+    text-align: center;
+}
+
+.load-more-btn {
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: #0056b3;
+}

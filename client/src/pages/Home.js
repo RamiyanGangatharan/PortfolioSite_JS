@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, {useEffect, useState} from 'react';
+import {Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Helmet } from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
 const Home = () => {
     const [home, setHome] = useState(null);

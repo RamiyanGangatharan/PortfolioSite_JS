@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../src/Projects.css';
-import { Helmet } from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
 const Projects = () => {
     const [projectList, setProjectList] = useState([]);
@@ -21,7 +21,7 @@ const Projects = () => {
             <div className="d-flex flex-wrap justify-content-center">
                 {projectList.map((project, index) => (
                     <div className="card project-card m-3" key={index}>
-                        <img src={project.image} alt={project.title} />
+                        <img src={project.image} alt={project.title}/>
                         <div className="card-body">
                             <h5 className="card-title">{project.title}</h5>
                             <p className="card-text">{project.description}</p>

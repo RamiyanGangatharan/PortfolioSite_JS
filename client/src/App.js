@@ -4,14 +4,15 @@ import Home from './pages/Home';
 import About from './pages/About';
 import DigitalResume from "./pages/DigitalResume";
 import Projects from './pages/Projects';
+import Photography from "./pages/photography";
 import Research from "./pages/Research";
 import Contact from './pages/Contact';
 import Layout from './Layout';
 import './App.css';
+import './font.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                     <Route path="/about" element={<About />} />
                     <Route path="/digitalResume" element={<DigitalResume />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/photography" element={<Photography />} />
                     <Route path="/research" element={<Research/>}/>
                     <Route path="/contact" element={<Contact />} />
                 </Routes>

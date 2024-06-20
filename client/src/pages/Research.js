@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Helmet} from "react-helmet";
 
@@ -13,7 +13,7 @@ const Research = () => {
             .catch(error => console.error('Error fetching research papers:', error));
     }, []);
 
-    useEffect( () => {
+    useEffect(() => {
         fetch('data/Research/research_content.json')
             .then(response => response.json())
             .then(data => setResearchContent(data))
@@ -32,7 +32,7 @@ const Research = () => {
                 </header>
             ))}
             <div className="table-responsive">
-                <table className="table table-bordered table-striped">
+                <table className="table table-bordered table-striped custom-table_research">
                     <thead className="thead-dark">
                     <tr>
                         <th scope="col">#</th>

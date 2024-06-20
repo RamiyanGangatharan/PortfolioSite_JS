@@ -100,7 +100,7 @@ const DigitalResume = () => {
             <section className="mb-5">
                 <h2 className="section-title">Technical Skills</h2>
                 <div className="container table-responsive">
-                    <table className="table table-bordered table-hover">
+                    <table className="table table-bordered table-hover custom-table">
                         <thead className="table-dark">
                         <tr>
                             <th className="p-3">Languages</th>
