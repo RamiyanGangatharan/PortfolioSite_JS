@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "Research Paper 1",
-    "link": "#"
+    "title": "Computer Science: Fundamentals",
+    "link": "/research/1"
   },
   {
     "id": 2,
     "title": "Research Paper 2",
-    "link": "#"
+    "link": "/research/2"
   }
 ]

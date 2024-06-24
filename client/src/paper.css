@@ -1,0 +1,27 @@
+.paper {
+    width: 8.5in;
+    min-height: 11in;
+    padding: 1in;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    line-height: 1.5;
+}
+
+
+.paper h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.paper h2 {
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.paper p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
