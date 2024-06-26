@@ -5,8 +5,8 @@ import About from './pages/About';
 import DigitalResume from "./pages/DigitalResume";
 import Projects from './pages/Projects';
 import Photography from "./pages/photography";
-import Research from "./pages/Research";
 
+import Research from "./pages/Research";
 import CSFundamentals from "./pages/researchPapers/CS_1-Fundamentals";
 
 import Contact from './pages/Contact';
@@ -29,8 +29,10 @@ const App = () => {
                     <Route path="/digitalResume" element={<DigitalResume />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/photography" element={<Photography />} />
+
                     <Route path="/research" element={<Research/>}/>
                     <Route path="/research/1" element={<CSFundamentals />} />
+
                     <Route path="/contact" element={<Contact />} />
                 </Routes>
             </Layout>
