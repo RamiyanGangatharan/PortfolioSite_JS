@@ -1,0 +1,92 @@
+[
+  {
+    "title": "IT in Business Research Report",
+    "author": "Ramiyan Gangatharan",
+    "studentNumber": "100835223",
+    "institution": "Durham College",
+    "course": "MGMT 1224-02: Business in IT",
+    "date_of_completion": "April 6th, 2023",
+    "sections": [
+      {
+        "section_title": "Introduction",
+        "content": "As technology continues to evolve, the integration of information technology into business has become increasingly important. While there are debates surrounding its benefits and drawbacks, information technology has a significant impact on modern businesses. This report aims to provide a comprehensive analysis of the effects of information technology on businesses by examining various sources, including the annotated bibliography compiled for this assignment."
+      },
+      {
+        "section_title": "How Technology Integration Enhances Business",
+        "content": "One potential positive impact of integrating business and information technology is increased competition, as noted by business information technology technicians. By leveraging technology, businesses of all sizes can streamline operations, improve consumer - business  relations, and gain insights into customer interactions and overall behavior. This section will explore how technology can serve as a powerful tool for businesses to remain competitive in today's fast-paced and dynamic economy. "
+      },
+      {
+        "section_title": "Technological Frameworks & Data Collection",
+        "content": "Information technology can be a powerful tool for businesses (Sinhmar 2014) as it provides a framework for the internal structure & operations of a company, and facilitates the connection between customers and companies, as discussed in the article 'Using the Perspective of Business Information Technology Technicians to Explore How Information Technology Affects Business Competitive Advantage' Shen, Yeh, Lin (2022). Integrating information technology into business can also allow companies to gain insight into customer data.\n For instance, having a loyalty program in place can give companies access to valuable customer information, such as purchase history, preferences, and contact information. This data can be analyzed to better understand customer behaviour, improve marketing, and personalize customer experience. Some examples of companies that leverage customer data through loyalty programs include Amazon, Google, and Meta (formerly known as Facebook). For example, Google utilizes customer information to provide personalized advertising and enhance search results for a more personalized experience."
+      },
+      {
+        "section_title": "TD Bank & the Canadian Banking System",
+        "content": "The Canadian banking industry has undergone a significant transformation thanks to the emergence of mobile banking, which allowed banks to leverage technology to enhance customer experience and streamline operations, particularly with the introduction of Interac E-Transfers. This demonstrates the potential of information technology to facilitate connections between businesses and businesses as well as businesses and consumers, as highlighted in the previous paragraph. Furthermore, the advent of mobile banking brought about notable changes in society.\n Toronto Dominion Bank's strategic shift towards mobile banking in 2007 played a crucial role in reshaping the banking landscape. Before mobile banking, Interac was an established interbank network, founded in 1984, that focused on debit services. In 2003, Interac launched the E-Transfer system, allowing users to transfer money via email. With the rise of mobile banking, E-Transfers became incredibly popular and have since become the primary means of transferring funds and making purchases in Canada."
+      },
+      {
+        "section_title": "Risks of Integrating IT into Business Applications",
+        "content": "Although integrating information technology into business applications has many benefits, it also comes with certain risks like cyber attacks must be acknowledged. One of the most significant risks is cybersecurity, as the integration of business and information technology can expose companies to data breaches and Distributed Denial of Service attacks. These types of attacks can potentially harm a company's reputation by exposing sensitive information about employees and customers. In the following section, we will explore the potential risks associated with integrating business and information technology and provide recommendations for businesses to effectively mitigate these risks. "
+      },
+      {
+        "section_title": "Cybercrime",
+        "content": "One of the major risks associated with integrating information technology into businesses is cybercrime. Notable examples of cybercrime include DDoS attacks and data breaches, which can occur either within or outside the company. DDoS attacks involve cybercriminals overwhelming a network with malicious traffic, causing regular traffic to be disrupted and making it difficult for regular users to communicate between their associated networks. "
+      },
+      {
+        "section_title": "The Highway Example",
+        "content": "Imagine being stuck in traffic on a busy highway, but instead of normal traffic, there is a sudden influx of cars from a festival that grinds traffic to a halt, making it impossible to reach your destination. Similarly, DDoS attacks can bring networks to a standstill, causing significant disruption to business operations. While not a form of cybercrime in and of itself, data breaches can lead to serious charges such as identity theft and violation of government or industry compliance regulations. Therefore, protecting against data breaches is an essential part of maintaining the security of a company's digital infrastructure."
+      },
+      {
+        "section_title": "Conclusion",
+        "content": "In conclusion, the impact of information technology on businesses is complicated. While there are certainly risks associated with the increasing reliance on digital technology, there are also opportunities for businesses to thrive. By taking a comprehensive approach to this issue, we can better understand the potential benefits and drawbacks of  IT in business and develop strategies for leveraging this powerful tool to drive innovation and growth."
+      },
+      {
+        "section_title": "Annotated Bibliography",
+        "topic": "Information Technology in Business",
+        "entries": [
+          {
+            "author": "Sinhmar, S.",
+            "year": 2014,
+            "title": "Consequence of information technology in business",
+            "source": "International Journal of Education and Management Studies",
+            "volume": "4",
+            "issue": "2",
+            "pages": "156-160",
+            "url": "http://search.proquest.com.dproxy.library.dc-uoit.ca/scholarly-journals/consequence-information-technology-business/docview/1680503491/se-2",
+            "notes": "Chosen for its currency within the last decade, relevance, and distinct perspective compared to other articles. Authoritative with credible authorship, and accurate with comprehensive citations. Focuses on IT strategies necessary for modern business success, educating on business transformations through IT."
+          },
+          {
+            "author": "Shen, C.-C., Yeh, C.-C., & Lin, C.-N.",
+            "year": 2022,
+            "title": "Using the perspective of business information technology technicians to explore how information technology affects business competitive advantage",
+            "source": "Technological Forecasting & Social Change",
+            "article_id": "121973",
+            "url": "https://doi.org/10.1016/j.techfore.2022.121973",
+            "notes": "Current and relevant with authoritative PhD authors. Accurate with full source citations. Discusses the effective use of IT in enhancing competitive business advantages from the perspective of IT technicians."
+          },
+          {
+            "author": "Dhar, V. & Sundararajan, A.",
+            "year": 2007,
+            "title": "Information Technologies in Business: A Blueprint for Education and Research",
+            "source": "Information Systems Research",
+            "volume": "18",
+            "issue": "2",
+            "pages": "125-141",
+            "url": "http://search.proquest.com.dproxy.library.dc-uoit.ca/scholarly-journals/information-technologies-business-blueprint/docview/208155798/se-2",
+            "notes": "Somewhat current within the 21st century, focusing on IT's impact on education and research. Credible authors from reputable institutions. Discusses integration of IT into education and business, preparing for technological advancements."
+          },
+          {
+            "author": "Yeh, Chi-Hung, Lee, G., & Pai, Jung-Chi",
+            "year": 2012,
+            "title": "How information system capability affects e-business information technology strategy implementation",
+            "source": "Business Process Management Journal",
+            "volume": "18",
+            "issue": "2",
+            "pages": "197-218",
+            "url": "https://doi.org/10.1108/14637151211225171",
+            "notes": "Recent article relevant for its focus on the differences and similarities between information systems and technologies. Credible authors from reputable institutions, emphasizing data and strategies."
+          }
+        ]
+      }
+    ]
+  }
+]

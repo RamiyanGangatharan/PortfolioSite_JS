@@ -2,11 +2,13 @@
   {
     "id": 1,
     "title": "Computer Science: Fundamentals",
+    "date": "In Progress",
     "link": "/research/1"
   },
   {
     "id": 2,
-    "title": "Research Paper 2",
+    "title": "IT in Business",
+    "date": "April 6, 2023",
     "link": "/research/2"
   }
 ]

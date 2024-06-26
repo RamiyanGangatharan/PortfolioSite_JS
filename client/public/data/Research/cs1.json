@@ -2,63 +2,11 @@
   {
     "title": "Accelerated Path to the Mastery of Computer Science: Computer Programming Fundamentals",
     "author": "Ramiyan Gangatharan",
-    "date_of_completion": "[Date of Completion]",
+    "date_of_completion": "Work in Progress",
     "sections": [
       {
         "section_title": "Introduction",
         "content": "The purpose of this series of papers is to enhance my educational development as a programming student and to contribute to the broader understanding of computer science. This research endeavor is undertaken with the objective of preparing myself for the potential pursuit of a bachelor's degree in computer science. It is my hope that readers will also find these papers informative and beneficial to their own understanding of the subject.\nComputer programming as defined by Wilkins (2021) is the process of providing a computer with a precise set of instructions to execute. Using programming languages such as C# we can interact with computers in a manner that abstracts away the complexities of direct instruction manipulation.\nMachine code, the most fundamental language of computers, consists of binary instructions that are directly executed by the computer’s central processing unit (CPU) (Hemmendinger, 2008). This low-level language is highly specific to the architecture of the computer and is difficult for humans to read, write, and debug due to its complexity and lack of readability. In contrast, high-level programming languages, such as C#, are designed to be more user-friendly and easier to understand. These languages provide a level of abstraction that simplifies the programming process, allowing developers to write instructions in a syntax more like human language and logical structures.\nIntegrated Development Environments (IDEs) significantly enhance the programming experience by providing comprehensive tools that assist in reading, writing, testing, and debugging code. IDEs offer features such as syntax highlighting, code completion, and real-time error detection, which streamline the development process (Olawanle, 2022). When using an IDE, developers can write code in a high-level language, and the IDE, with the help of a compiler, translates this code into machine code. This translation process ensures that the high-level instructions are converted into a format that the computer can execute efficiently.\nBefore the advent of IDEs, developers often used basic text editors like Microsoft Notepad and saved their code with specific file extensions such as .php or .c to run it through a compiler (Olawanle, 2022). This method required developers to spend considerable time meticulously reading each line of code to ensure it functioned correctly. In the event of an error, they would have to manually comb through the code to identify and correct the mistake. IDEs alleviate this burden by integrating error detection and debugging tools, thereby significantly reducing the time and effort needed to produce error-free code."
-      },
-      {
-        "section_title": "Syntax",
-        "content": ""
-      },
-      {
-        "section_title": "Variables",
-        "content": ""
-      },
-      {
-        "section_title": "Data Types",
-        "content": ""
-      },
-      {
-        "section_title": "Operators",
-        "content": ""
-      },
-      {
-        "section_title": "Control Structures",
-        "content": ""
-      },
-      {
-        "section_title": "Functions & Methods",
-        "content": ""
-      },
-      {
-        "section_title": "Libraries",
-        "content": ""
-      },
-      {
-        "section_title": "Object Oriented Programming Concepts",
-        "content": ""
-      },
-      {
-        "section_title": "Data Structures",
-        "content": ""
-      },
-      {
-        "section_title": "Error Handling",
-        "content": ""
-      },
-      {
-        "section_title": "Input and Output Handling",
-        "content": ""
-      },
-      {
-        "section_title": "Recursion",
-        "content": ""
-      },
-      {
-        "section_title": "Conclusion",
-        "content": ""
       },
       {
         "section_title": "Sources",

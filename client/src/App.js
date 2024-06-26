@@ -9,6 +9,7 @@ import Photography from "./pages/photography";
 
 import Research from "./pages/Research";
 import CSFundamentals from "./pages/researchPapers/CS_1-Fundamentals";
+import IT_Business from "./pages/researchPapers/IT_inBusiness";
 
 import Contact from './pages/Contact';
 import Layout from './Layout';
@@ -33,6 +34,7 @@ const App = () => {
 
                     <Route path="/research" element={<Research/>}/>
                     <Route path="/research/1" element={<CSFundamentals />} />
+                    <Route path="/research/2" element={<IT_Business />} />
 
                     <Route path="/contact" element={<Contact />} />
                 </Routes>

@@ -17,6 +17,7 @@ const ResearchTable = ({ researchList }) => (
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Title</th>
+                <th scope="col">Date</th>
                 <th scope="col">Link</th>
             </tr>
             </thead>
@@ -25,6 +26,7 @@ const ResearchTable = ({ researchList }) => (
                 <tr key={index}>
                     <th scope="row">{paper.id}</th>
                     <td>{paper.title}</td>
+                    <td>{paper.date}</td>
                     <td>
                         <Link to={paper.link} className="text-decoration-none">Read Paper</Link>
                     </td>
