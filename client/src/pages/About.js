@@ -12,11 +12,11 @@ const About = () => {
 
     useEffect(() => {
         Promise.all([
-            fetch('data/About/introduction.json').then(response => response.json()),
-            fetch('data/About/experience.json').then(response => response.json()),
-            fetch('data/About/education.json').then(response => response.json()),
-            fetch('data/About/hobbies.json').then(response => response.json()),
-            fetch('data/About/contact.json').then(response => response.json())
+            fetch('./data/About/Introduction.json').then(response => response.json()),
+            fetch('./data/About/experience.json').then(response => response.json()),
+            fetch('./data/About/education.json').then(response => response.json()),
+            fetch('./data/About/hobbies.json').then(response => response.json()),
+            fetch('./data/About/contact.json').then(response => response.json())
         ])
             .then(([introData, expData, eduData, hobbiesData, contactData]) => {
                 setIntroduction(introData.introduction);
