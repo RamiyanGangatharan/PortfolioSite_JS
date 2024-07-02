@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
+// Component for displaying the header of the research page
 const ResearchHeader = ({ header, subheader }) => (
     <header className="text-center mb-4">
         <h1>{header}</h1>
@@ -10,6 +11,7 @@ const ResearchHeader = ({ header, subheader }) => (
     </header>
 );
 
+// Component for displaying the research table
 const ResearchTable = ({ researchList }) => (
     <div className="table-responsive">
         <table className="table table-bordered table-striped">
@@ -37,52 +39,58 @@ const ResearchTable = ({ researchList }) => (
     </div>
 );
 
+// Main Research component
 const Research = () => {
+    // Initialize state for research list, content, loading status, and error handling
     const [researchList, setResearchList] = useState([]);
     const [researchContent, setResearchContent] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // Fetch data when the component mounts
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const researchResponse = await fetch('data/Research/research.json');
+                const researchResponse = await fetch('data/Research/research.json'); // Fetch research list
                 const researchData = await researchResponse.json();
                 setResearchList(researchData);
 
-                const contentResponse = await fetch('data/Research/research_content.json');
+                const contentResponse = await fetch('data/Research/research_content.json'); // Fetch research content
                 const contentData = await contentResponse.json();
                 setResearchContent(contentData);
 
-                setLoading(false);
+                setLoading(false); // Set loading to false after data is fetched
             } catch (err) {
-                setError(err.message);
+                setError(err.message); // Set error message if there's an error
                 setLoading(false);
             }
         };
 
-        fetchData();
-    }, []);
+        fetchData(); // Call the fetchData function
+    }, []); // Empty dependency array ensures this effect runs only once
 
+    // Display loading message while data is being fetched
     if (loading) {
         return <div className="container my-5 text-center">Loading...</div>;
     }
 
+    // Display error message if there's an error
     if (error) {
         return <div className="container my-5 text-center text-danger">Error: {error}</div>;
     }
 
     return (
-        <div className="container my-5">
+        <div className="container my-5"> {/* Main container for the research content */}
             <Helmet>
-                <title>Research</title>
+                <title>Research</title> {/* Set the document title */}
             </Helmet>
+            {/* Map over research content to display each header */}
             {researchContent.map((item, index) => (
                 <ResearchHeader key={index} header={item.header} subheader={item.subheader} />
             ))}
-            <ResearchTable researchList={researchList} />
+            <ResearchTable researchList={researchList} /> {/* Display the research table */}
         </div>
     );
 };
 
-export default Research;
+export default Research; // Export the Research component

@@ -8,42 +8,52 @@
     {
       "languages": "Java",
       "environments": "Visual Studio Code",
-      "frameworks": "Selenium"
+      "frameworks": "N/A"
     },
     {
       "languages": "Python",
-      "environments": "IntelliJ IDEA",
-      "frameworks": "Unity Engine"
+      "environments": "IntelliJ IDEA, PyCharm",
+      "frameworks": "Selenium"
     },
     {
       "languages": "HTML",
-      "environments": "PyCharm",
-      "frameworks": "ExpressJS"
+      "environments": "Visual Studio Code",
+      "frameworks": "Bootstrap, ExpressJS"
     },
     {
       "languages": "CSS",
-      "environments": "SSMS",
-      "frameworks": "Bootstrap"
+      "environments": "Visual Studio Code",
+      "frameworks": "Bootstrap, Tailwind CSS"
     },
     {
       "languages": "PHP",
-      "environments": "IBM Z/OS for Mainframes",
+      "environments": "Visual Studio Code",
       "frameworks": "ReactJS"
     },
     {
       "languages": "JavaScript",
       "environments": "WebStorm",
-      "frameworks": "jQuery"
+      "frameworks": "ReactJS, Angular, Node.js, jQuery"
     },
     {
       "languages": "SQL",
-      "environments": "",
-      "frameworks": ""
+      "environments": "SSMS",
+      "frameworks": "N/A"
     },
     {
       "languages": "COBOL/JCL",
-      "environments": "",
-      "frameworks": ""
+      "environments": "IBM Z/OS for Mainframes",
+      "frameworks": "N/A"
+    },
+    {
+      "languages": "C++",
+      "environments": "Visual Studio",
+      "frameworks": "N/A"
+    },
+    {
+      "languages": "TypeScript",
+      "environments": "Visual Studio Code, Webstorm",
+      "frameworks": "Angular, NextJS"
     }
   ]
 }

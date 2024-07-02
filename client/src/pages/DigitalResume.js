@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from 'react';
-import {Link} from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../../client/src/App.css';
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 
 const DigitalResume = () => {
+    // Initialize state for various sections of the resume
     const [contact, setContact] = useState(null);
     const [experience, setExperience] = useState(null);
     const [education, setEducation] = useState(null);
@@ -13,6 +14,7 @@ const DigitalResume = () => {
     const [projects, setProjects] = useState(null);
     const [home, setHome] = useState(null);
 
+    // Fetch data for all sections when the component mounts
     useEffect(() => {
         Promise.all([
             fetch('data/resumeData/contact.json').then(response => response.json()),
@@ -24,30 +26,33 @@ const DigitalResume = () => {
             fetch('data/Home/homepage.json').then(response => response.json())
         ])
             .then(([contactData, experienceData, educationData, skillsData, courseworkData, projectsData, homeData]) => {
+                // Set state with the fetched data
                 setContact(contactData);
                 setExperience(experienceData.experience);
                 setEducation(educationData.education);
                 setTechnicalSkills(skillsData.technicalSkills);
                 setCoursework(courseworkData.coursework);
                 setProjects(projectsData.projects);
-                setHome(homeData[0]);  // Accessing the first object in the array
+                setHome(homeData[0]); // Accessing the first object in the array
             })
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
+            .catch(error => console.error('Error fetching data:', error)); // Catch and log any errors
+    }, []); // Empty dependency array ensures this effect runs only once
 
+    // Display loading message while data is being fetched
     if (!contact || !experience || !education || !technicalSkills || !coursework || !projects || !home) {
         return <div className="hero">Loading...</div>;
     }
 
     return (
-        <div className="container mt-lg-5">
+        <div className="container mt-lg-5"> {/* Main container for the resume content */}
             <Helmet>
-                <title>Resume</title>
+                <title>Resume</title> {/* Set the document title */}
             </Helmet>
             <header className="text-center mb-4">
-                <h1 className="display-6">{home.name}</h1>
+                <h1 className="display-6">{home.name}</h1> {/* Display name from home data */}
                 <nav>
                     <ul className="list-inline text-center">
+                        {/* Iterate over contact information */}
                         {contact.contact.map((item, index) => (
                             <li className="list-inline-item" key={index}>
                                 {item.type === "Phone" ? (
@@ -62,6 +67,7 @@ const DigitalResume = () => {
                 </nav>
             </header>
 
+            {/* Experience Section */}
             <section className="mb-5">
                 <h2 className="section-title">Experience</h2>
                 <div className="section-content">
@@ -81,6 +87,7 @@ const DigitalResume = () => {
                 </div>
             </section>
 
+            {/* Education Section */}
             <section className="mb-5">
                 <h2 className="section-title">Education</h2>
                 <div className="section-content">
@@ -97,6 +104,7 @@ const DigitalResume = () => {
                 </div>
             </section>
 
+            {/* Technical Skills Section */}
             <section className="mb-5">
                 <h2 className="section-title">Technical Skills</h2>
                 <div className="container table-responsive">
@@ -112,8 +120,8 @@ const DigitalResume = () => {
                         {technicalSkills.map((skill, index) => (
                             <tr key={index}>
                                 <td className="p-3">{skill.languages}</td>
-                                <td className="p-3">{skill.environments}</td>
-                                <td className="p-3">{skill.frameworks}</td>
+                                <td className="p-3">{skill.environments || 'N/A'}</td>
+                                <td className="p-3">{skill.frameworks || 'N/A'}</td>
                             </tr>
                         ))}
                         </tbody>
@@ -121,6 +129,7 @@ const DigitalResume = () => {
                 </div>
             </section>
 
+            {/* Relevant Coursework Section */}
             <section className="mb-5">
                 <h2 className="section-title">Relevant Coursework</h2>
                 <div className="section-content">
@@ -132,6 +141,7 @@ const DigitalResume = () => {
                 </div>
             </section>
 
+            {/* Featured Projects Section */}
             <section className="mb-5">
                 <h2 className="section-title">Featured Projects</h2>
                 <div className="section-content">
@@ -155,4 +165,4 @@ const DigitalResume = () => {
     );
 };
 
-export default DigitalResume;
+export default DigitalResume; // Export the DigitalResume component

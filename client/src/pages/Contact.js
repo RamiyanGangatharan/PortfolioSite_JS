@@ -3,15 +3,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Helmet} from "react-helmet";
 
 const Contact = () => {
+    // Initialize state for form fields and popup visibility
     const [subject, setSubject] = useState('');
     const [content, setContent] = useState('');
     const [showPopup, setShowPopup] = useState(false);
 
+    // Handle form submission
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Prevent default form submission behavior
+
+        // Create mailto link with subject and content
         window.location.href = `mailto:ramiyan2185@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(content)}`;
 
-        // Show popup
+        // Show popup message
         setShowPopup(true);
         setTimeout(() => setShowPopup(false), 3000); // Hide popup after 3 seconds
 
@@ -21,15 +25,15 @@ const Contact = () => {
     };
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5"> {/* Main container for the contact page content */}
             <Helmet>
-                <title>Contact</title>
+                <title>Contact</title> {/* Set the document title */}
             </Helmet>
             <div className="row justify-content-center">
                 <div className="col-lg-8">
                     <h1 className="mb-4 text-center text-dark">Contact Page</h1>
                     <p className="text-center text-muted">Get in touch with me.</p>
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit}> {/* Form submission handler */}
                         <div className="mb-3">
                             <label htmlFor="subjectHelp" className="form-label text-dark">Subject</label>
                             <input
@@ -76,4 +80,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default Contact; // Export the Contact component
