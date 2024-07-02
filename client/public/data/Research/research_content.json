@@ -1,7 +1,10 @@
 [
   {
     "header": "My Featured Research Papers",
-    "subheader": "Explore the research papers I have completed during my studies."
+    "subheader": "Explore the research papers I have completed during my studies.",
+    "note_1": "the date section is in the format DD/MM/YYYY.",
+    "note_2": "the type 'personal' means that I did this research at my own discretion.",
+    "note_3": "the type 'academic' means that I did this research as a part of an assignment."
   }
 
 ]

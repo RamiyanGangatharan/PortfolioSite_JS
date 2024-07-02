@@ -1,0 +1,95 @@
+[
+  {
+    "title": "Cloud Titans Compared: Amazon Web Services, Microsoft Azure, & Google Cloud",
+    "author": "Ramiyan Gangatharan",
+    "institution": "Durham College",
+    "faculty": "Faculty of Science, Engineering, & Information Technology (SEIT)",
+    "program": "Computer Programming and Analysis",
+    "course": "INFT 2203-07: Cloud Technology Fundamentals",
+    "professor": "Leo Lu",
+    "date": "January 24,2024",
+    "sections": [
+      {
+        "section_title": "Introduction",
+        "content": "In this dynamic field of cloud technology, cloud computing has been one of the biggest topics to be explored. There have been many cloud-based platforms since the 1960s as I have discussed in my previous report. In this report, I will be discussing and comparing the top three cloud platforms on the market today. The platforms I will be comparing are Amazon Web Services (AWS), Microsoft Azure, and the Google Cloud Platform (GCP). The focus of this comparison is to provide a detailed analysis of each platform, offering insights that will guide both myself and potential readers in making well-informed decisions regarding the selection of a cloud technology platform for both personal and commercial use.\n AWS offers a versatile “pay as you go” platform primarily for infrastructural needs. This platform enables access to a range of services, including artificial intelligence, machine learning, data lakes, databases, and Internet of Things (IoT) applications (Amazon, 2018). On the other hand, Microsoft Azure is tailored to assist developers in deploying applications and services seamlessly, eliminating the necessity for local infrastructure ownership (Tenthline Inc, 2022). The Google Cloud Platform, while sharing similarities with AWS, is often preferred for personal use, offering robust storage solutions and the ability to host apps and APIs to reduce the load on local systems (Google, 2023)."
+      },
+      {
+        "section_title": "The Comparative Analysis of the Cloud Titans",
+        "content": "Amazon Web Services (AWS): AWS, a pioneer in cloud computing since 2000, has left an unforgettable mark on the digital infrastructure of clients such as Airbnb and Netflix. Boasting a 32% market share (D, 2022), AWS's dominance is fueled by innovation, seen in services like AWS Lambda and AWS Fargate. Challenges in data security and competition underscore the dynamic nature of cloud computing, positioning AWS at the forefront of technological advancements.\nMicrosoft Azure: Launched in 2010, Microsoft Azure swiftly rose to become the second-largest cloud platform, renowned for its robust security, scalability, and cost-effectiveness. Azure introduced innovative billing with per-minute billing and Blockchain as a Service (BaaS), challenging industry norms. Its comprehensive computing services, including PaaS, FaaS, and container orchestration, seamlessly integrate with Microsoft products. Versatile storage solutions and networking services further enhance its appeal (Microsoft, 2023).\nGoogle Cloud Platform (GCP): GCP distinguishes itself with robust support for Kubernetes and extensive utilization of artificial intelligence (AI), excelling in machine learning and text-to-speech applications. Notable clients include MLB, Gitlab, and TIME magazine. GCP's computing services encompass app engines, Docker Container Registry, Compute Engines, GPUs, and Kubernetes. Networking features like VPNs and load balancing, like Azure, enhance connectivity, while Cloud Storage offers versatile data management solutions (Google Cloud, n.d.)."
+      },
+      {
+        "section_title": "Comparison Results",
+        "content": "In our comparison of cloud services for large-scale and commercial purposes, it's essential to consider key factors such as scalability, performance, cost-effectiveness, security, and reliability. Each of these services has earned its reputation in these aspects. AWS, for instance, stands out as a modular and scalable service with a strong emphasis on customization. It's renowned for its adaptability to individual customer needs. AWS is recognized for its excellence across the board, excelling in scalability, performance, cost-effectiveness, security, and reliability. Its extensive range of services and robust infrastructure support make it the dominant player in the cloud computing landscape. On the other hand, Azure offers a user-friendly experience and cost-effectiveness through per-minute billing and comprehensive interfaces. While GCP specializes in Kubernetes support and AI capabilities, making it unique in those areas. In this comparison, AWS emerges as the top choice, particularly for large-scale and commercial applications, given its well-rounded performance and reputation. Its versatility and ability to excel in all key areas make it the clear winner for businesses seeking a cloud provider that can cater to their diverse needs.\n In conclusion, the exploration and comparison of the top three cloud platforms —Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) —have shed light on the dynamic landscape of cloud technology. Cloud computing has evolved significantly since its inception in the 1960s, and these platforms represent the forefront of innovation in the field. As cloud technology continues to evolve, ongoing research and evaluation will be crucial in ensuring that businesses and individuals make well-informed decisions regarding their cloud platform choices."
+      },
+      {
+        "section_title": "Sources",
+        "content": [
+          {
+            "author": "Amazon",
+            "date": "2018",
+            "title": "What is AWS.",
+            "source": "Amazon Web Services, Inc.",
+            "link": "https://aws.amazon.com/what-is-aws/?nc1=f_cc"
+          },
+          {
+            "author": "Amazon Web Services",
+            "date": "2018",
+            "title": "Networking and Content Delivery – Amazon Web Services",
+            "source": "Amazon Web Services, Inc.",
+            "link": "https://aws.amazon.com/products/networking/"
+          },
+          {
+            "author": "D, S.",
+            "date": "2022-01-28",
+            "title": "5 Reasons To Choose AWS Cloud Services Over Competitors (Azure, GCP)",
+            "source": "Rapider",
+            "link": "https://www.rapyder.com/blogs/5-reasons-choose-aws-cloud-services-over-competitors-azure-gcp/"
+          },
+          {
+            "author": "Google",
+            "date": "2023-01-22",
+            "title": "Google Cloud overview | Overview",
+            "source": "Google Cloud",
+            "link": "https://cloud.google.com/docs/overview"
+          },
+          {
+            "author": "Google Cloud",
+            "date": "n.d.",
+            "title": "Networking Products",
+            "source": "Google Cloud",
+            "link": "https://cloud.google.com/products/networking?hl=en",
+            "retrieved": "2024-01-25"
+          },
+          {
+            "author": "Kubernetes",
+            "date": "2019",
+            "title": "Production-Grade Container Orchestration",
+            "source": "Kubernetes.io",
+            "link": "https://kubernetes.io/"
+          },
+          {
+            "author": "Microsoft Azure",
+            "date": "2023-07-28",
+            "title": "Azure networking services overview",
+            "source": "Learn.microsoft.com",
+            "link": "https://learn.microsoft.com/en-us/azure/networking/fundamentals/networking-overview"
+          },
+          {
+            "author": "Saviant",
+            "date": "2018",
+            "title": "Intelligent Business Consulting Company",
+            "source": "Saviantconsulting.com",
+            "link": "https://www.saviantconsulting.com/blog/10-reasons-why-choose-microsoft-azure.aspx"
+          },
+          {
+            "author": "Tenthline Inc.",
+            "date": "2022-10-15",
+            "title": "What’s the difference between Cloud and Azure?",
+            "source": "Www.linkedin.com",
+            "link": "https://www.linkedin.com/pulse/whats-difference-between-cloud-azure-tenthline/"
+          }
+        ]
+      }
+    ]
+  }
+]

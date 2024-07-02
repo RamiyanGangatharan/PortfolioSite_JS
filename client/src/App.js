@@ -1,5 +1,4 @@
 import React from 'react';
-import { Analytics } from "@vercel/analytics/react"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -9,7 +8,10 @@ import Photography from "./pages/photography";
 
 import Research from "./pages/Research";
 import CSFundamentals from "./pages/researchPapers/CS_1-Fundamentals";
-import IT_Business from "./pages/researchPapers/IT_inBusiness";
+import ITBusiness from "./pages/researchPapers/IT_inBusiness";
+import CloudCompared from "./pages/researchPapers/CloudCompared";
+import ServiceTypes from "./pages/researchPapers/serviceTypes";
+import ProgrammingParadigms from "./pages/researchPapers/programmingParadigms";
 
 import Contact from './pages/Contact';
 import Layout from './Layout';
@@ -18,6 +20,8 @@ import './font.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+
+
 
 
 
@@ -34,7 +38,11 @@ const App = () => {
 
                     <Route path="/research" element={<Research/>}/>
                     <Route path="/research/1" element={<CSFundamentals />} />
-                    <Route path="/research/2" element={<IT_Business />} />
+                    <Route path="/research/2" element={<ProgrammingParadigms/>} />
+                    <Route path="/research/2" element={<CloudCompared />} />
+                    <Route path="/research/3" element={<ServiceTypes />} />
+                    <Route path="/research/4" element={<ITBusiness />} />
+
 
                     <Route path="/contact" element={<Contact />} />
                 </Routes>

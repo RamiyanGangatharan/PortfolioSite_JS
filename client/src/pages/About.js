@@ -1,15 +1,17 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Link} from "react-router-dom";
-import {Helmet} from "react-helmet";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const About = () => {
+    // Initialize state for various sections of the about page
     const [introduction, setIntroduction] = useState(null);
     const [experience, setExperience] = useState(null);
     const [education, setEducation] = useState(null);
     const [hobbies, setHobbies] = useState(null);
     const [contact, setContact] = useState(null);
 
+    // Fetch data for all sections when the component mounts
     useEffect(() => {
         Promise.all([
             fetch('./data/About/Introduction.json').then(response => response.json()),
@@ -19,26 +21,29 @@ const About = () => {
             fetch('./data/About/contact.json').then(response => response.json())
         ])
             .then(([introData, expData, eduData, hobbiesData, contactData]) => {
+                // Set state with the fetched data
                 setIntroduction(introData.introduction);
                 setExperience(expData.professionalExperience);
                 setEducation(eduData.education);
                 setHobbies(hobbiesData.hobbiesAndInterests);
                 setContact(contactData.contact);
             })
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
+            .catch(error => console.error('Error fetching data:', error)); // Catch and log any errors
+    }, []); // Empty dependency array ensures this effect runs only once
 
+    // Display loading message while data is being fetched
     if (!introduction || !experience || !education || !hobbies || !contact) {
         return <div className="hero">Loading...</div>;
     }
 
     return (
-        <div className="container mt-5">
+        <div className="container mt-5"> {/* Main container for the about page content */}
             <Helmet>
-                <title>About</title>
+                <title>About</title> {/* Set the document title */}
             </Helmet>
             <h1>About</h1>
-            <div className="accordion accordion-flush" id="aboutAccordion">
+            <div className="accordion accordion-flush" id="aboutAccordion"> {/* Accordion for about page sections */}
+                {/* Introduction Section */}
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingOne">
                         <button className="accordion-button" type="button" data-bs-toggle="collapse"
@@ -61,6 +66,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                {/* Professional Experience Section */}
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingTwo">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -82,6 +88,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                {/* Education Section */}
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingThree">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -123,6 +130,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                {/* Hobbies and Interests Section */}
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingSix">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -160,8 +168,7 @@ const About = () => {
                                                 <>
                                                     <h4 className="mt-4">Academic Literature</h4>
                                                     <div className="table-responsive mt-3">
-                                                        <table
-                                                            className="table table-hover table-striped table-bordered custom-table">
+                                                        <table className="table table-hover table-striped table-bordered custom-table">
                                                             <thead>
                                                             <tr>
                                                                 <th scope="col">Book Name</th>
@@ -186,8 +193,7 @@ const About = () => {
                                                 <>
                                                     <h4 className="mt-4">Recreational Literature</h4>
                                                     <div className="table-responsive mt-3">
-                                                        <table
-                                                            className="table table-hover table-striped table-bordered custom-table">
+                                                        <table className="table table-hover table-striped table-bordered custom-table">
                                                             <thead>
                                                             <tr>
                                                                 <th scope="col">Book Name</th>
@@ -227,7 +233,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-
+                {/* Contact Section */}
                 <div className="accordion-item">
                     <h2 className="accordion-header" id="flush-headingSeven">
                         <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -260,4 +266,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default About; // Export the About component

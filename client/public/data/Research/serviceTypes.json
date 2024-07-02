@@ -1,0 +1,117 @@
+[
+  {
+    "title": "Evaluating Cloud Computing Paradigms: A Comparative Study & Analysis of IAAS, PAAS, & SAAS Cloud Computing Models",
+    "author": "Ramiyan Gangatharan",
+    "institution": "Durham College",
+    "faculty": "Faculty of Science, Engineering, & Information Technology (SEIT)",
+    "program": "Computer Programming and Analysis",
+    "course": "INFT 2203-07: Cloud Technology Fundamentals",
+    "professor": "Leo Lu",
+    "date": "January 19,2024",
+    "sections":[
+      {
+        "section_title": "Introduction",
+        "content": "The creation, implementation, and the wide-spread use of the cloud for computing has revolutionized the delivery of services over the internet, presenting versatile solutions that span across infrastructure, platforms, and software. This research paper dissect and critically compare the three predominant service models: Infrastructure as a Service (IAAS), Platform as a Service (PAAS), and Software as a Service (SAAS), explaining and expanding up on their distinct characteristics, applications, and the transformative impact they have on the information technology industry at the modern times we are living in.\nThe seven points of significance in cloud computing is the cost, performance, scalability, flexibility, productivity, reliability, and security (Microsoft, 2023). The founding of cloud computing took place in the 1960s where in 1961, John McCarthy created the term “Artificial Intelligence”. John McCarthy was suggesting that computing would become a utility (VARGHESE, 2019). He was right about that suggestion where he indirectly influenced the cloud services we have today. We now use cloud technology as a utility daily, commonly offloading workloads to large scale systems and using storage servers as backup devices and basic storage like Google Drive, Google Cloud, and Amazon Web Services (Commonly known as AWS) for both commercial and personal use cases. \nAn early form of cloud computing emerged in 1967 with IBM's introduction of 'Time Sharing,' a technology that allowed multiple users to access and utilize the same computing resources, laying the groundwork for effective and efficient resource utilization (VARGHESE, 2019). This concept was further advanced with the creation of the ARPANET (Advanced Research Projects Agency Network) Protocol in 1969 by the United States Federal Government. As a precursor to the internet, ARPANET was instrumental in developing the foundational architecture for networked computing, facilitating services like wire transfers for financial institutions, global email communication, and file transfer protocols such as file transfer protocol (FTP) and simple mail transfer protocol (SMTP). These innovations were pivotal, as they inspired the use of distributed computing — a cornerstone in the field of cloud computing — where multiple computers are employed for large-scale tasks over the internet.\nIn summary, cloud computing, distinguished by its cost-effectiveness, high performance, scalability, and security, has established itself as a fundamental element of contemporary technology. Its origins can be traced back to the 1960s, significantly influenced by pioneers like John McCarthy, and further shaped by developments such as IBM's 'Time Sharing' and the advent of ARPANET. These innovations laid the groundwork for what has become an integral part of our daily digital experience. Today, cloud computing is exemplified by powerful platforms like Google Cloud and Amazon Web Services, which demonstrate the practical realization of its early concepts. As we look to the future, cloud computing is poised to continue its trajectory of innovation, further transforming the landscape of technology and its applications in various sectors like the medical sector .\n"
+      },
+      {
+        "section_title": "Overview of Cloud Computing Models",
+        "content": "There are many kinds of cloud computing models. The cloud models I will be writing about are the public, private, hybrid, federated, and the intercloud and how its implemented. \nThe public cloud is a model where a company or person owns it separate from you or your company where it delivers services over the open internet (Microsoft, 2023). The most common services that use the public cloud are storage servers, computing servers for large datasets, and open-source services like website hosting and data type converters (like PDF to JPEG conversions) over the internet using various network types. \nThe private cloud is a model where all the computing and storage benefits of the cloud are used by sole proprietors, businesses, and small organizations (Microsoft, 2023). While this is a cloud service, it is restricted to the use of that organization and not leased out towards the public. Private cloud services can be hosted by a company’s own data centre or can be reserved from a service provider at a cost. Concisely, the typical costs of cloud computing are processing power and storage requirements according to the services needed. They typically charge storage by the gigabyte and charge computing by the hour where the longer the company or individual runs your service, the more you charge the consumer.\nThe hybrid cloud is where there is an integration between the public and private cloud services and infrastructure (Microsoft, 2023). This type of service offers the most flexibility to existing and brand-new companies where if you are an existing company, you can have a small data centre in your building while also borrowing servers from a third-party service provider (Microsoft, 2023). Another way of hybrid cloud technology is where you access both private and public cloud providers to distribute and process data in several ways. When you are a brand-new company, you can leave the overhead infrastructure and maintenance to the third-party service provider to manage and secure (Microsoft, 2023).\nThe federated cloud is a type of model where you use multiple different cloud services all organized by a “Cloud Broker” (Geeks for Geeks, 2021) where it is common to have many cloud service providers provide resources to the same company or organization all managed by a cloud broker in a centralized and secured system. This provides the benefits of both public and private cloud but can require a lot more processing power locally having to process all the data. According to (Professor Leo Lu, 01/18/2024), Governments use the federated cloud to regulate the distribution of data due to security measures when dealing with government bodies. The intercloud is a type of model where it is like the federated cloud but is more open and how the individual clouds interact with each other to create custom cloud services to communities, educational facilities, and businesses in many forms and financial situations."
+      },
+      {
+        "section_title": "The Comparison Between Cloud Products Provided by Service Providers",
+        "content": "The three primary cloud products provided by cloud service providers are Infrastructure as a Service (IAAS), Platforms as a Service (PAAS) and Software as a Service (SAAS). Each of these services have their own costs, scalability, flexibility, productivity, and security concerns to observe and must be considered when purchasing these products. All these cloud-based products and services are productive no matter who you chose.\n IAAS is used for basic services like servers, virtual machines, storage, networks, and operating systems. (Microsoft, 2023) This is charged by usage. In the real world, servers can be used in many ways like virtual machines, storage, and network racks. Server space can be rented out to consumers on a contractual or on-demand basis. Servers can be purchased by the time used or by the processing power the consumer requires at the time of use. Some services like VMware are free for personal use but must charge consumers for commercial use as it requires more processing power from their services. Infrastructure as a service is both very flexible and scalable in a sense that you do not have the physical hardware and you just lease more servers as your demand for these services grow over time. Although all these models have both security issues and benefits, they must be looked over thoroughly before you purchase a product. The main benefit of having IAAS is that there are professional cyber security staff looking after all the infrastructure (Timonera, 2023), but the downside is the limited control you have over your equipment and data in those servers (Timonera, 2023).\n PAAS are a place where you can create applications without worrying about the overhead infrastructure required for each application you create (Microsoft, 2023). For example, Microsoft Azure uses the PAAS model to store and distribute applications and services across multiple clouds to all consumers with a Microsoft account (Microsoft, 2023). In this case, you as the developer do not have to worry about the infrastructure or processes of distribution and the responsibility is transferred over to the Microsoft Azure services. The cost implications of Platforms as a Service are that you can pay as you go (Elbe, 2021) but if the provider goes out of business you must migrate all your data to another service in which may be expensive depending on how large it is (Elbe, 2021). PAAS is also as flexible and scalable as IAAS as you just rent out what you need in that moment. The security concern of PAAS is that the customer is responsible for the security of their sector of equipment and services (Balarin, 2023).\n PAAS are a place where you can create applications without worrying about the overhead infrastructure required for each application you create (Microsoft, 2023). For example, Microsoft Azure uses the PAAS model to store and distribute applications and services across multiple clouds to all consumers with a Microsoft account (Microsoft, 2023). In this case, you as the developer do not have to worry about the infrastructure or processes of distribution and the responsibility is transferred over to the Microsoft Azure services. The cost implications of Platforms as a Service are that you can pay as you go (Elbe, 2021) but if the provider goes out of business you must migrate all your data to another service in which may be expensive depending on how large it is (Elbe, 2021). PAAS is also as flexible and scalable as IAAS as you just rent out what you need in that moment. The security concern of PAAS is that the customer is responsible for the security of their sector of equipment and services (Balarin, 2023)."
+      },
+      {
+        "section_title": "Use Cases",
+        "content": "There are a multitude of use cases for each of these services as cloud technologies grow. The use cases for IAAS are the ability to rent out virtual servers for use in computing (Smith, 2021), web hosting, remote data centres, and data analytics. The use cases for PAAS are for runtime middleware like AWS Elastic Beanstalk (Smith, 2021), API development, and application development. The use cases for SAAS are an app store where you can purchase and download applications from mobile devices, personal computers, and with enterprise level infrastructure. In addition to an app store, you can also use SAAS technology for e-commerce solutions, store management, and for payroll."
+      },
+      {
+        "section_title": "Conclusion",
+        "content": "In conclusion, this analysis compares the features and flaws of infrastructure, platforms, and software as a service. Each model has their own unique benefits, for example, Infrastructure and platforms have the aspect of being both flexible and scalable both physically and financially. The benefit of software as a service is its scalability where you can have a store on the internet and can use the scalable infrastructure as a service model to grow your store for anyone to access on the internet. The major flaw in cloud computing is the security concerns where you may not have control over your data, but cloud computing is a great step in technology for the future as we all move towards having a dependency on its technology daily. "
+      },
+      {
+        "section_title": "Sources",
+        "content": [
+          {
+            "author": "Amazon Web Services",
+            "date": "2014",
+            "title": "Overview of Amazon Web Services.",
+            "source": "",
+            "link": ""
+          },
+          {
+            "author": "Balarin, L.",
+            "date": "2023-04-17",
+            "title": "SaaS, PaaS, and IaaS: What are all the risks? | Arrow ECS NA.",
+            "source": "Www.arrow.com",
+            "link": "https://www.arrow.com/globalecs/na/arrow-channel-advisor/saas-paas-and-iaas-what-are-all-the-risks/"
+          },
+          {
+            "author": "DuploCloud",
+            "date": "2023-07-14",
+            "title": "How to Calculate Cloud Computing Costs.",
+            "source": "DuploCloud",
+            "link": "https://duplocloud.com/blog/how-to-calculate-cloud-computing-costs/#:~:text=Once%20you"
+          },
+          {
+            "author": "Elbe, D.",
+            "date": "2021-04",
+            "title": "What is PaaS—advantages, disadvantages, and cost | Artifakt Blog.",
+            "source": "What Is PaaS—Advantages, Disadvantages, and Cost",
+            "link": "https://www.artifakt.com/blog/paas/paas-advantages-disadvantages-and-cost/"
+          },
+          {
+            "author": "Geeks for Geeks",
+            "date": "2021-03-12",
+            "title": "What is Cloud Federation?",
+            "source": "GeeksforGeeks",
+            "link": "https://www.geeksforgeeks.org/what-is-cloud-federation/"
+          },
+          {
+            "author": "Google",
+            "date": "n.d.",
+            "title": "What Is a Public Cloud?",
+            "source": "Google Cloud",
+            "link": "https://cloud.google.com/learn/what-is-public-cloud",
+            "retrieved": "2024-01-15"
+          },
+          {
+            "author": "Microsoft",
+            "date": "2023",
+            "title": "What Is Cloud Computing? A Beginner’s Guide | Microsoft Azure.",
+            "source": "Azure.microsoft.com",
+            "link": "https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing#:~:text=Simply%20put%2C%20cloud%20computing%20is"
+          },
+          {
+            "author": "Salesforce",
+            "date": "2018",
+            "title": "What is Software as a Service (SaaS)?",
+            "source": "Salesforce.com",
+            "link": "https://www.salesforce.com/ca/saas/"
+          },
+          {
+            "author": "Smith, M.",
+            "date": "2021-02-11",
+            "title": "IaaS vs PaaS vs SaaS: Examples and How to Choose.",
+            "source": "Zendesk",
+            "link": "https://www.zendesk.com/blog/what-is-paas/"
+          },
+          {
+            "author": "Timonera, K.",
+            "date": "2023-12-19",
+            "title": "IaaS Security: Top 8 Issues & Prevention Best Practices.",
+            "source": "ESecurity Planet",
+            "link": "https://www.esecurityplanet.com/cloud/iaas-security/"
+          },
+          {
+            "author": "VARGHESE, B.",
+            "date": "2019-03-19",
+            "title": "History of the cloud | BCS.",
+            "source": "Www.bcs.org",
+            "link": "https://www.bcs.org/articles-opinion-and-research/history-of-the-cloud/"
+          }
+        ]
+      }
+    ]
+  }
+]

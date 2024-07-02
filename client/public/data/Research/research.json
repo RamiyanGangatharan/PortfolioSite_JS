@@ -1,14 +1,37 @@
 [
   {
     "id": 1,
+    "type": "Personal",
     "title": "Computer Science: Fundamentals",
-    "date": "In Progress",
+    "date": "WIP",
     "link": "/research/1"
   },
   {
     "id": 2,
-    "title": "IT in Business",
-    "date": "April 6, 2023",
+    "type": "Academic",
+    "title": "Programming Paradigms: A Comparative Analysis of C++, Python, Java, and C# ",
+    "date": "09/02/2024",
     "link": "/research/2"
+  },
+  {
+    "id": 3,
+    "type": "Academic",
+    "title": "Cloud Titans Compared: AWS, MS Azure, & Google Cloud",
+    "date": "24/01/2024",
+    "link": "/research/3"
+  },
+  {
+    "id": 4,
+    "type": "Academic",
+    "title": "Evaluating Cloud Computing Paradigms: A Comparative Study of Cloud Computing Models",
+    "date": "19/01/2024",
+    "link": "/research/4"
+  },
+  {
+    "id": 5,
+    "type": "Academic",
+    "title": "IT in Business",
+    "date": "06/04/2023",
+    "link": "/research/5"
   }
 ]
