@@ -37,8 +37,8 @@ const IT_Business = () => {
 
     return (
         <div className="paper">
-            <div className="page-break-before: always">
-                <h1 className="APA_Title">{data.title}</h1>
+            <div className="APA_Title page-break-before: always">
+                <h1 className="section-title">{data.title}</h1>
                 <p className='text-body-secondary'><strong>Author:</strong> {data.author}</p>
                 <p className='text-body-secondary'><strong>Date of Completion:</strong> {data.date_of_completion}</p>
             </div>
