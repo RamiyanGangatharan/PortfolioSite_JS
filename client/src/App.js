@@ -39,9 +39,9 @@ const App = () => {
                     <Route path="/research" element={<Research/>}/>
                     <Route path="/research/1" element={<CSFundamentals />} />
                     <Route path="/research/2" element={<ProgrammingParadigms/>} />
-                    <Route path="/research/2" element={<CloudCompared />} />
-                    <Route path="/research/3" element={<ServiceTypes />} />
-                    <Route path="/research/4" element={<ITBusiness />} />
+                    <Route path="/research/3" element={<CloudCompared />} />
+                    <Route path="/research/4" element={<ServiceTypes />} />
+                    <Route path="/research/5" element={<ITBusiness />} />
 
 
                     <Route path="/contact" element={<Contact />} />
