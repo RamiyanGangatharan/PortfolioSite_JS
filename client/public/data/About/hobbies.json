@@ -113,6 +113,11 @@
           "status": "Not Read"
         },
         {
+          "bookName": "Dune",
+          "author": "Frank Herbert",
+          "status": "Not Read"
+        },
+        {
           "bookName": "Crime & Punishment",
           "author": "Fyodor Dostoevsky",
           "status": "Not Read"
